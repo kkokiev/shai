@@ -1,0 +1,54 @@
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 54px 40px;
+  color: light;
+  background: main;
+below(1100px)
+}
+.footer:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.footer__col {
+  padding-top: 5px;
+  padding-bottom: 10px;
+below(1100px)
+}
+.footer__contact-wrap {
+  float: left;
+  width: 28%;
+  padding-right: 45px;
+below(1100px)
+below(600px)
+}
+.footer__work-form-wrap {
+  float: right;
+  width: 28%;
+  padding-left: 10px;
+  border-left: 1px solid main-light;
+below(1100px)
+below(600px)
+}
+.footer__contacts-wrap {
+  float: left;
+  width: 44%;
+below(1100px)
+}
+.footer__work-form {
+  padding-top: 90px;
+below(600px)
+}
+.footer__title {
+  margin-bottom: 15px;
+  font-family: font-1;
+  font-size: 1.6rem;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+below(600px)
+}
+/*# sourceMappingURL=src/stylus/blocks/footer.css.map */

@@ -1,0 +1,77 @@
+.footer-form
+	display table
+	width 100%
+	table-layout fixed
+	
+	+below(600px)
+		display block
+	
+	&__input-col
+		display table-cell
+		width 62%
+		
+		+below(600px)
+			display block
+			width 100%
+			margin-bottom 30px
+		
+	&__submit-col
+		display table-cell
+		width 38%
+		padding-left 10px
+		vertical-align bottom
+		
+		+below(600px)
+			display block
+			padding-left 0
+			width 110px
+		
+	&__input-grp
+		margin-bottom 16px
+		
+		&:last-child
+			margin-bottom 0
+		
+	&__input
+		width 100%
+		padding 6px 0
+		color light
+		font-family font-6
+		font-size 1.2rem
+		line-height 1.33em
+		text-transform uppercase
+		background transparent
+		border 0
+		border-bottom 1px solid main-light
+		
+		&:focus
+			border-bottom 1px solid light
+		
+	&__submit
+		width 100%
+		padding 6px 12px
+		font-family font-6
+		font-size 1.2rem
+		line-height 1.33em
+		text-transform uppercase
+		background main-light
+		border 0
+		tr(.3s)
+		
+		+below(1100px)
+			background light
+			
+			&:hover,
+			&:focus
+				background main-light
+		
+		&:hover,
+		&:focus
+			background light
+			
+		&_alt
+			background light
+			
+			&:hover,
+			&:focus
+				background main-light

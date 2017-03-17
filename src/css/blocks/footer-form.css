@@ -1,0 +1,62 @@
+.footer-form {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+below(600px)
+}
+.footer-form__input-col {
+  display: table-cell;
+  width: 62%;
+below(600px)
+}
+.footer-form__submit-col {
+  display: table-cell;
+  width: 38%;
+  padding-left: 10px;
+  vertical-align: bottom;
+below(600px)
+}
+.footer-form__input-grp {
+  margin-bottom: 16px;
+}
+.footer-form__input-grp:last-child {
+  margin-bottom: 0;
+}
+.footer-form__input {
+  width: 100%;
+  padding: 6px 0;
+  color: light;
+  font-family: font-6;
+  font-size: 1.2rem;
+  line-height: 1.33em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid main-light;
+}
+.footer-form__input:focus {
+  border-bottom: 1px solid light;
+}
+.footer-form__submit {
+  width: 100%;
+  padding: 6px 12px;
+  font-family: font-6;
+  font-size: 1.2rem;
+  line-height: 1.33em;
+  text-transform: uppercase;
+  background: main-light;
+  border: 0;
+below(1100px)
+}
+.footer-form__submit:hover,
+.footer-form__submit:focus {
+  background: light;
+}
+.footer-form__submit_alt {
+  background: light;
+}
+.footer-form__submit_alt:hover,
+.footer-form__submit_alt:focus {
+  background: main-light;
+}
+/*# sourceMappingURL=src/stylus/blocks/footer-form.css.map */

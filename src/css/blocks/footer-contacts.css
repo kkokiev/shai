@@ -1,0 +1,38 @@
+.footer-contacts {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+below(480px)
+}
+.footer-contacts__col {
+  display: table-cell;
+  width: 50%;
+  padding-right: 40px;
+below(600px)
+below(480px)
+}
+.footer-contacts p {
+  margin-bottom: 38px;
+  font-family: font-5;
+  font-size: 1.2rem;
+  line-height: 1.33em;
+  text-transform: uppercase;
+below(600px)
+}
+.footer-contacts p:last-child {
+  margin-bottom: 0;
+}
+.footer-contacts p a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-contacts p a:hover,
+.footer-contacts p a:focus {
+  text-decoration: underline;
+}
+.footer-contacts__social {
+  padding-top: 95px;
+below(600px)
+below(480px)
+}
+/*# sourceMappingURL=src/stylus/blocks/footer-contacts.css.map */

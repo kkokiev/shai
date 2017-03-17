@@ -1,0 +1,53 @@
+.footer-contacts
+	display table
+	width 100%
+	table-layout fixed
+	
+	+below(480px)
+		display block
+	
+	&__col
+		display table-cell
+		width 50%
+		padding-right 40px
+		
+		+below(600px)
+			padding-right 10px
+		
+		+below(480px)
+			display block
+			width 100%
+			padding 0
+			margin-bottom 30px
+			
+			&:last-child
+				margin 0
+			
+	p
+		margin-bottom 38px
+		font-family font-5
+		font-size 1.2rem
+		line-height 1.33em
+		text-transform uppercase
+		
+		+below(600px)
+			margin-bottom 12px
+		
+		&:last-child
+			margin-bottom 0
+		
+		a
+			color inherit
+			text-decoration none
+			
+			&:hover,
+			&:focus
+				text-decoration underline
+				
+	&__social
+		padding-top 95px
+		
+		+below(600px)
+			padding-top 45px
+		+below(480px)
+			padding 0

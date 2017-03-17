@@ -1,0 +1,18 @@
+.social-list *:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.social-list > li {
+  float: left;
+  margin-right: 15px;
+}
+.social-list > li:last-child {
+  margin-right: 0;
+}
+.social-list > li > a {
+  display: block;
+  height: 26px;
+  width: 26px;
+}
+/*# sourceMappingURL=src/stylus/blocks/socila-list.css.map */

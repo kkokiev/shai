@@ -1,0 +1,25 @@
+.social-list
+	
+	*:after
+		content ''
+		display table
+		clear both
+		
+	> li
+		float left
+		margin-right 15px
+		
+		&:last-child
+			margin-right 0
+			
+		> a
+			display block
+			height 22px
+			
+			&:hover,
+			&:focus
+				opacity: .6
+			
+			> img
+				height 100%
+				width auto

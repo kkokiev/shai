@@ -1,0 +1,75 @@
+.footer
+	position absolute
+	left 0
+	right 0
+	bottom 0
+	padding 40px 54px 40px
+	color light
+	background main
+	
+	+below(1100px)
+		padding 40px 30px 
+	
+	&:after
+		content ''
+		display table
+		clear both
+		
+	&__col
+		padding-top 5px
+		padding-bottom 10px
+		
+		+below(1100px)
+			padding 0
+		
+	&__contact-wrap
+		float left
+		width 28%
+		padding-right 45px
+		
+		+below(1100px)
+			width 50%
+			
+		+below(600px)
+			width 100%
+			padding-right 0
+			margin-bottom 40px
+		
+	&__work-form-wrap
+		float right
+		width 28%
+		padding-left 10px
+		border-left 1px solid main-light
+		
+		+below(1100px)
+			width 50%
+			margin-bottom 40px
+			padding-left 0
+			border-left 0
+			
+		+below(600px)
+			width 100%
+		
+	&__contacts-wrap
+		float left
+		width 44%
+		
+		+below(1100px)
+			width 100%
+		
+	&__work-form
+		padding-top 90px
+		
+		+below(600px)
+			padding-top 0
+		
+	&__title
+		margin-bottom 15px
+		font-family font-1
+		font-size 1.6rem
+		line-height 1em
+		letter-spacing .1em
+		text-transform uppercase
+		
+		+below(600px)
+			margin-bottom 20px
