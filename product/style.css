@@ -464,6 +464,10 @@ img {
     margin-bottom: 20px;
   }
 }
+.google-map {
+  height: 400px;
+  background: #ccc;
+}
 .main-wrapper {
   position: relative;
   min-height: 100vh;

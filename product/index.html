@@ -19,10 +19,65 @@
 	
 	<div class="content">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque numquam molestiae delectus. Ipsum expedita, vero voluptate unde. Incidunt magnam harum quisquam voluptatem eveniet commodi sint cumque minima asperiores soluta nulla accusamus et, quidem repellendus corporis consectetur laboriosam atque suscipit, similique consequatur quia quae. Dolores veritatis dicta iure, eos aspernatur praesentium!
-	</div>
 
+		<div class="google-map" id="goolge-map">
+		<script>
+			function initMap(){
+
+				var point = new google.maps.LatLng(32.0549541, 34.77256579999994);
+
+				var myMapOptions = {
+					zoom: 16,
+					zoomControl: false,
+					center: point,
+					disableDoubleClickZoom: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					scrollwheel: false,
+					panControl: true,
+					streetViewControl: false,
+					draggable : true,
+					overviewMapControl: true,
+					overviewMapControlOptions: {
+						opened: false,
+					},
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					styles: [{"stylers":[{"hue":"#ff1a00"},
+					{"invert_lightness":true},
+					{"saturation":-100},
+					{"lightness":33},
+					{"gamma":0.5}]},
+					{
+						"featureType":"water",
+						"elementType":"geometry",
+						"stylers":[{"color":"#2D333C"}]
+					}],
+					zoomControl: false,
+					scaleControl: false,
+					scrollwheel: false
+				};
+
+				var map = new google.maps.Map(document.getElementById("goolge-map"),myMapOptions);
+
+				var marker = new google.maps.Marker({
+					draggable: false,
+					raiseOnDrag: false,
+					icon: 'images/mapicon.png',
+					map: map,
+					position: point
+				});
+
+			};
+
+		</script>
+			
+		</div>
+	</div>
+	
+	<!-- FOOTER -->
 	<footer class="footer" id="footer">
 		
+		<!-- contact form goes here -->
 		<div class="footer__col footer__contact-wrap">
 			<h3 class="footer__title">Contact</h3>
 
@@ -44,7 +99,8 @@
 				</div>
 			</form>
 		</div>
-
+		
+		<!-- work with us form -->
 		<div class="footer__col footer__work-form-wrap">
 			<h3 class="footer__title">Work with us</h3>
 			<div class="footer__work-form">
@@ -61,7 +117,8 @@
 				</form>
 			</div>
 		</div>
-
+		
+		<!-- info and follow -->
 		<div class="footer__col footer__contacts-wrap">
 
 			<div class="footer-contacts">
@@ -100,13 +157,19 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
+
 	</footer>
-</div>
+
+
+</div><!-- /.main-wrapper -->
 
 <!-- JQuery -->
 <script src="lib/jquery3/jquery-3.2.0.min.js"></script>
+
+<!-- Google map api key -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGIs-_j5uOewTDDbWYvUMvSQYVKmo3CNE&callback=initMap"
+ type="text/javascript"></script>
 
 <!-- app js -->
 <script src="js/app.js"></script>

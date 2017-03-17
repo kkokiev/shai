@@ -26,5 +26,6 @@ if(!(window.console && console.log)) {
 	$(window).on('load', handler);
 	$(window).on('resize', handler);
 
+
 })(jQuery);
 
