@@ -31,7 +31,7 @@ if(!(window.console && console.log)) {
 	/*setup mobile nav */
 	$navBtn.on('click', function(){
 		$(this).toggleClass('nav-btn_opened')
-		$headerNav.slideToggle();
+		$headerNav.stop().slideToggle();
 	});
 
 	var navbarHandler = function(){
@@ -82,7 +82,7 @@ if(!(window.console && console.log)) {
 		}
 	});
 
-
+	/*setup gallery*/
 	var $gallery = $('.gallery').masonry({
 		itemSelector: '.gallery__col',
 		columnWidth: '.gallery__col-sizer',
@@ -98,12 +98,21 @@ if(!(window.console && console.log)) {
 			return;
 		} else {
 			$(this).addClass('gallery__col_opened');
-			var $gallery = $('.gallery').masonry({
-				itemSelector: '.gallery__col',
-				columnWidth: '.gallery__col-sizer',
-				percentPosition: true
-			});
+			$gallery.masonry('layout');
 		}
+	});
+
+	/*setup parallax*/
+	$('.js-parallax-1').parallax({
+		imageSrc: 'images/homepage_parallax_1.jpg',
+		parallax: 'scroll',
+		bleed: '55'
+	});
+
+	$('.js-parallax-2').parallax({
+		imageSrc: 'images/homepage_parallax_2.jpg',
+		parallax: 'scroll',
+		bleed: '55'
 	});
 
 })(jQuery);

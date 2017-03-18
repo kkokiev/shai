@@ -1,5 +1,8 @@
+.vibe {
+  padding: 0 15px;
+}
 .vibe__intro {
-  padding-top: 100px;
+  padding-top: 116px;
   padding-bottom: 20px;
 below(600px)
 }
@@ -8,10 +11,12 @@ below(600px)
   font-size: 10rem;
   line-height: 1.1em;
   text-align: center;
+  text-transform: uppercase;
 below(600px)
 }
 .vibe__body {
   width: 100%;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 /*# sourceMappingURL=src/stylus/blocks/vibe.css.map */

@@ -213,6 +213,7 @@ img {
   position: relative;
   color: #000;
   font-size: 1.4rem;
+  background: #fff;
 }
 .fixed-header {
   position: fixed;
@@ -679,6 +680,61 @@ img {
   top: 9px;
   transform: rotate(-135deg);
 }
+.parallax-box {
+  display: table;
+  width: 100%;
+  height: 66vh;
+  min-height: 180px;
+  overflow: hidden;
+  color: #252525;
+}
+.parallax-box__inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.parallax-box__btn {
+  display: inline-block;
+  padding: 16px 20px 15px;
+  color: #252525;
+  font-family: 'museosans-500', Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.1em;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #252525;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.parallax-box__btn:hover,
+.parallax-box__btn:focus {
+  color: #fff;
+  background: #252525;
+}
+.parallax-box__btn_alt {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.parallax-box__btn_alt:hover,
+.parallax-box__btn_alt:focus {
+  color: #252525;
+  background: #fff;
+}
+.parallax-box h3 {
+  margin-bottom: 24px;
+  font-family: 'museosans-700', Arial, sans-serif;
+  font-size: 4rem;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+.parallax-box p {
+  margin-bottom: 36px;
+  font-family: 'museosans-500', Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.2em;
+}
 .project-block {
   padding-bottom: 10px;
 }
@@ -881,13 +937,11 @@ img {
   height: 100%;
   width: auto;
 }
-@media only screen and (max-width: 600px) {
-  .vibe {
-    padding: 0 15px;
-  }
+.vibe {
+  padding: 0 15px;
 }
 .vibe__intro {
-  padding-top: 100px;
+  padding-top: 116px;
   padding-bottom: 20px;
 }
 @media only screen and (max-width: 600px) {
@@ -901,6 +955,7 @@ img {
   font-size: 10rem;
   line-height: 1.1em;
   text-align: center;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
   .vibe__title {
@@ -909,6 +964,7 @@ img {
 }
 .vibe__body {
   width: 100%;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 /*# sourceMappingURL=src/stylus/style.css.map */
