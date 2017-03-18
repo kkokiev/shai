@@ -1,0 +1,63 @@
+.project-intro {
+  position: relative;
+  padding: 60px 100px 10px;
+below(1100px)
+}
+.project-intro__link {
+  position: absolute;
+  bottom: 180px;
+  display: inline-block;
+  transform-origin: center;
+below(1100px)
+}
+.project-intro__link_prev {
+  left: -20px;
+  transform: rotate(-90deg);
+}
+.project-intro__link_next {
+  right: -10px;
+  transform: rotate(90deg);
+}
+.project-intro__link a {
+  color: main;
+  font-family: font-1;
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  letter-spacing: 0.06em;
+}
+.project-intro__link a:hover,
+.project-intro__link a:focus {
+  text-decoration: none;
+}
+.project-intro__col-1 {
+  float: left;
+  width: 23%;
+  padding-right: 20px;
+below(1100px)
+}
+.project-intro__col-2 {
+  float: left;
+  width: 54%;
+below(1100px)
+}
+.project-intro__title {
+  font-family: font-4;
+  font-size: 4rem;
+  line-height: 2em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.project-intro__body p {
+  margin-bottom: 40px;
+  font-family: font-7;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+below(1100px)
+}
+.project-intro__body p:last-child {
+  margin-bottom: 0;
+}
+.project-intro__body img {
+  width: 100%;
+}
+/*# sourceMappingURL=src/stylus/blocks/project-intro.css.map */

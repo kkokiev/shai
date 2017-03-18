@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Shay home</title>
+	<title>Shay Vibe</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,104 +18,127 @@
 	
 	<div class="content">
 		
-		<!-- intro video and header -->
-		<div class="intro">
-			<div class="intro__video-wrap">
-				
-			</div>
+		<div class="fixed-header">
+			
+			<header class="header">
+				<div class="header__logo">
+					<div class="logo">
+						<div class="logo__body">
+							<a href="/" class="logo__link">
+								<img src="images/Shaihayoun-logo.png" alt="Shaihayoun" class="logo__img">
+							</a>
+						</div>
+					</div>
+				</div>
 
-			<div class="intro__header-wrap">
-				
-				<header class="header">
-					<div class="header__logo">
-						<div class="logo">
-							<h1 class="logo__body">
-								<a href="/" class="logo__link">
-									<img src="images/Shaihayoun-logo.png" alt="Shaihayoun" class="logo__img">
-								</a>
-							</h1>
+				<div class="header__nav-btn">
+					<a href="#" class="nav-btn" id="nav-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+
+				<div class="header__nav" id="header-nav">
+					<nav class="main-nav">
+						<ul class="main-nav__menu">
+							<li><a href="index.html">About</a></li>
+							<li><a href="index.html">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+		</div><!-- /.fixed-header -->
+		
+		<div class="vibe">
+			
+			<div class="vibe__intro">
+				<h1 class="vibe__title">Vibe.</h1>
+			</div>
+		
+			<div class="vibe__body">
+				<div class="gallery">
+
+					<div class="gallery__col-sizer"></div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g1.jpg" alt="">
 						</div>
 					</div>
 
-					<div class="header__nav-btn">
-						<a href="#" class="nav-btn" id="nav-btn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</a>
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g2.jpg" alt="">
+						</div>
 					</div>
 
-					<div class="header__nav" id="header-nav">
-						<nav class="main-nav">
-							<ul class="main-nav__menu">
-								<li><a href="#home-about">About</a></li>
-								<li><a href="#home-portfolio">Portfolio</a></li>
-								<li><a href="#home-contact">Contact</a></li>
-							</ul>
-						</nav>
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g9.jpg" alt="">
+						</div>
 					</div>
-				</header>
 
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g4.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g5.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g6.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g7.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g1.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g9.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g10.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g11.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/vibe/g12.jpg" alt="">
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
 
-
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque numquam molestiae delectus. Ipsum expedita, vero voluptate unde. Incidunt magnam harum quisquam voluptatem eveniet commodi sint cumque minima asperiores soluta nulla accusamus et, quidem repellendus corporis consectetur laboriosam atque suscipit, similique consequatur quia quae. Dolores veritatis dicta iure, eos aspernatur praesentium!
-
-		<!-- google map -->
-		<div class="google-map" id="goolge-map">
-		</div>
-		<!-- google map setup script -->
-		<script>
-			function initMap(){
-
-				var point = new google.maps.LatLng(32.0549541, 34.77256579999994);
-
-				var myMapOptions = {
-					zoom: 16,
-					zoomControl: false,
-					center: point,
-					disableDoubleClickZoom: false,
-					mapTypeControl: false,
-					scaleControl: false,
-					scrollwheel: false,
-					panControl: true,
-					streetViewControl: false,
-					draggable : true,
-					overviewMapControl: true,
-					overviewMapControlOptions: {
-						opened: false,
-					},
-					mapTypeId: google.maps.MapTypeId.ROADMAP,
-					styles: [{"stylers":[{"hue":"#ff1a00"},
-					{"invert_lightness":true},
-					{"saturation":-100},
-					{"lightness":33},
-					{"gamma":0.5}]},
-					{
-						"featureType":"water",
-						"elementType":"geometry",
-						"stylers":[{"color":"#2D333C"}]
-					}],
-					zoomControl: false,
-					scaleControl: false,
-					scrollwheel: false
-				};
-
-				var map = new google.maps.Map(document.getElementById("goolge-map"),myMapOptions);
-
-				var marker = new google.maps.Marker({
-					draggable: false,
-					raiseOnDrag: false,
-					icon: 'images/mapicon.png',
-					map: map,
-					position: point,
-					optimized: false
-				});
-
-			};
-		</script>
-			
 	</div>
 	
 	<!-- FOOTER -->
@@ -211,9 +234,11 @@
 <!-- JQuery -->
 <script src="lib/jquery3/jquery-3.2.0.min.js"></script>
 
-<!-- Google map api key only for index page, key need to be changed -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGIs-_j5uOewTDDbWYvUMvSQYVKmo3CNE&callback=initMap"
- type="text/javascript"></script>
+<!-- Masonry plugin -->
+<script src="lib/masonry/masonry.pkgd.min.js"></script>
+
+<!-- Imagesloaded -->
+<script src="lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
 <!-- app js -->
 <script src="js/app.js"></script>

@@ -1,0 +1,24 @@
+.project-list > li {
+  float: left;
+  width: 25%;
+  border-right: 1px solid main;
+  border-bottom: 1px solid main;
+below(600px)
+}
+.project-list > li:nth-child(4n+4) {
+  border-right: 1px solid transparent;
+}
+.project-list > li:nth-last-child(-n+4) {
+  border-bottom: 0;
+}
+.project-list > li > a {
+  display: block;
+}
+.project-list > li > a:hover,
+.project-list > li > a:focus {
+  opacity: 0.5;
+}
+.project-list > li > a > img {
+  width: 100%;
+}
+/*# sourceMappingURL=src/stylus/blocks/project-list.css.map */

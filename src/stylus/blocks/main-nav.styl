@@ -1,0 +1,39 @@
+.main-nav
+	display inline-block
+	
+	&__menu
+		clearfix()
+		
+		+below(800px)
+			padding-top 10px
+			
+			
+		> li
+			float left
+			margin-right 25px
+			
+			+below(800px)
+				float none
+				margin-right 0
+				
+			
+			&:last-child
+				margin-right 0
+				
+			> a
+				display inline-block
+				color light
+				font-family font-1
+				font-size 1.6rem
+				line-height 1.2em
+				letter-spacing .1em
+				text-decoration none
+				text-transform uppercase
+				
+				+below(800px)
+					padding 10px 0
+				
+				&:hover,
+				&:focus
+					text-decoration underline
+					

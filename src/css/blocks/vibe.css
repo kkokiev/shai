@@ -1,0 +1,17 @@
+.vibe__intro {
+  padding-top: 100px;
+  padding-bottom: 20px;
+below(600px)
+}
+.vibe__title {
+  font-family: font-4;
+  font-size: 10rem;
+  line-height: 1.1em;
+  text-align: center;
+below(600px)
+}
+.vibe__body {
+  width: 100%;
+  overflow: hidden;
+}
+/*# sourceMappingURL=src/stylus/blocks/vibe.css.map */

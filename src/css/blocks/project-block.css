@@ -1,0 +1,22 @@
+.project-block {
+  padding-bottom: 10px;
+below(700px)
+}
+.project-block img {
+  width: 100%;
+}
+.project-block__row {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.project-block__col {
+  float: left;
+  width: 50%;
+}
+.project-block__col:first-child {
+  padding-right: 5px;
+}
+.project-block__col:last-child {
+  padding-left: 5px;
+}
+/*# sourceMappingURL=src/stylus/blocks/project-block.css.map */

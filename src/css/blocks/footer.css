@@ -8,11 +8,6 @@
   background: main;
 below(1100px)
 }
-.footer:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 .footer__col {
   padding-top: 5px;
   padding-bottom: 10px;

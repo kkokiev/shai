@@ -1,0 +1,41 @@
+.nav-btn
+	position relative
+	display inline-block
+	height 20px
+	width 25px
+	transition all .5s ease-in-out
+	cursor pointer
+	
+	span
+		position absolute
+		top 0
+		left 0
+		display block
+		height 2px
+		width 100%
+		background light
+		transform rotate(0deg)
+		transition all .25s ease-in-out
+		
+		&:nth-child(1)
+			top 2px
+			
+		&:nth-child(2)
+			top 9px
+			
+		&:nth-child(3)
+			top 16px
+	
+	&_opened
+		span
+			&:nth-child(1)
+				top 9px
+				transform rotate(135deg)
+				
+			&:nth-child(2)
+				left 25px
+				opacity 0
+			
+			&:nth-child(3)
+				top 9px
+				transform rotate(-135deg)

@@ -1,0 +1,27 @@
+.header {
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 20px 57px 14px;
+  background: #181515;
+below(900px)
+}
+.header__logo {
+  float: left;
+  width: 50%;
+below(800px)
+below(480px)
+}
+.header__nav-btn {
+  float: right;
+  display: none;
+  text-align: right;
+below(800px)
+}
+.header__nav {
+  display: block;
+  float: right;
+  width: 50%;
+  text-align: right;
+below(800px)
+}
+/*# sourceMappingURL=src/stylus/blocks/header.css.map */

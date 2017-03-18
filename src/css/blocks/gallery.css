@@ -1,0 +1,22 @@
+.gallery {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.gallery__col-sizer {
+  width: 25%;
+below(600px)
+}
+.gallery__col {
+  float: left;
+  width: 25%;
+  padding: 4px;
+below(600px)
+}
+.gallery__col_opened {
+  width: 50%;
+below(600px)
+}
+.gallery img {
+  width: 100%;
+}
+/*# sourceMappingURL=src/stylus/blocks/gallery.css.map */
