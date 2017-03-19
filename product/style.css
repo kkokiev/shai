@@ -568,11 +568,19 @@ img {
     width: 100%;
   }
 }
+.gallery__item {
+  position: relative;
+  overflow: hidden;
+}
+.gallery__overlay {
+  cursor: pointer;
+}
 .gallery img {
   width: 100%;
 }
 .gallery__slide-wrap {
   position: relative;
+  display: none;
 }
 .gallery__slide-wrap .bx-wrapper {
   margin: 0;
