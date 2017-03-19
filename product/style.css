@@ -215,6 +215,71 @@ img {
   font-size: 1.4rem;
   background: #fff;
 }
+.content-box {
+  margin: 0 auto;
+  max-width: 630px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content-box__container > h2 {
+  margin-bottom: 23px;
+  font-family: 'museosans-900', Arial, sans-serif;
+  font-size: 10rem;
+  line-height: 1.13em;
+  letter-spacing: 0.07em;
+}
+.content-box__container > h3 {
+  font-family: 'bebasneue-bold', Arial, sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+}
+.content-box__container > p {
+  margin-bottom: 10px;
+  font-family: 'quicksand-regular', Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4em;
+}
+.content-box__container > hr {
+  height: 4px;
+  width: 86px;
+  margin: 30px auto 25px;
+  background: #000;
+}
+.content-items {
+  padding-top: 25px;
+}
+.content-items:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.content-items__col {
+  float: left;
+  width: 33.33%;
+}
+.content-items__col > img {
+  max-width: 130px;
+  margin: 0 auto 10px;
+}
+.content-items__col > p {
+  padding: 0 10px;
+  font-family: 'quicksand-regular', Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  letter-spacing: 0.12em;
+}
+.content-items__count {
+  display: block;
+  margin-bottom: 23px;
+  font-family: 'museosans-900', Arial, sans-serif;
+  font-size: 9rem;
+  line-height: 1.15em;
+}
+.content__row {
+  background: #fff;
+  padding: 40px 0;
+}
 .fixed-header {
   position: fixed;
   left: 0;

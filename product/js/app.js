@@ -172,5 +172,48 @@ if(!(window.console && console.log)) {
 		end setup vibe page gallery and sliders
 	*/
 
+
+	/*setup counters on the index page*/
+	var countDone = true;
+
+	var setupCount = function() {
+
+		var t = $('.js-count').offset().top;
+		var s = $(window).scrollTop() + $(window).height();
+
+
+		if(s > t && countDone === true ){
+
+			$('.js-count').each(function () {
+				$(this).prop('Counter', 0).animate({
+					Counter: $(this).text()
+				}, {
+					duration: 4000,
+					easing: 'swing',
+					step: function (now) {
+						$(this).text(Math.ceil(now));
+					}
+				});
+
+			});
+
+			countDone = false;
+			var c = 0;
+			c +=1;
+
+		}
+
+	}
+
+	setupCount();
+
+	$(window).scroll(function() {
+		setupCount();
+	});
+
+	$(window).resize(function() {
+		setupCount();
+	});
+
 })(jQuery);
 

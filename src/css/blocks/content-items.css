@@ -1,0 +1,26 @@
+.content-items {
+  padding-top: 25px;
+}
+.content-items__col {
+  float: left;
+  width: 33.33%;
+}
+.content-items__col > img {
+  max-width: 130px;
+  margin: 0 auto 10px;
+}
+.content-items__col > p {
+  padding: 0 10px;
+  font-family: font-6;
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  letter-spacing: 0.12em;
+}
+.content-items__count {
+  display: block;
+  margin-bottom: 23px;
+  font-family: font-4;
+  font-size: 9rem;
+  line-height: 1.15em;
+}
+/*# sourceMappingURL=src/stylus/blocks/content-items.css.map */
