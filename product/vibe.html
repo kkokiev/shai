@@ -8,7 +8,9 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<!-- bxslider -->
+	<link href="lib/bxslider/jquery.bxslider.min.css" rel="stylesheet">
+	<!-- main styles -->
 	<link href="style.css" rel="stylesheet">
 </head>
 
@@ -60,18 +62,84 @@
 		
 			<div class="vibe__body">
 				<div class="gallery">
-
+					
+					<!-- empty sizer for the masonry plugin -->
 					<div class="gallery__col-sizer"></div>
 
-					<div class="gallery__col">
+					<div class="gallery__col gallery__col_opened">
 						<div class="gallery__item">
-							<img src="images/content/vibe/g1.jpg" alt="">
+							<div class="gallery__slide-wrap" id="gallery-slider-1">
+								<ul class="gallery-slider js-gallery-slider">
+									<li>
+										<img src="images/content/vibe/g1.jpg" alt="" title="Picture 1">
+									</li>
+									<li>
+										<img src="images/content/vibe/g2.jpg" alt="" title="Picture 2">
+									</li>
+									<li>
+										<img src="images/content/vibe/g9.jpg" alt="" title="Picture 3">
+									</li>
+									<li>
+										<img src="images/content/vibe/g4.jpg" alt="" title="Picture 4">
+									</li>
+									<li>
+										<img src="images/content/vibe/g5.jpg" alt="" title="Picture 5">
+									</li>
+								</ul>
+								<div class="gallery-slider-controls">
+									<div class="gallery-slider-controls__inner">
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_btn-wrap">
+											<span class="slider-btn slider-btn_prev"></span>
+											<span class="slider-btn slider-btn_next"></span>
+										</div>
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_count-wrap">
+											<span class="js-slider-counter"></span>
+											/
+											<span class="js-slider-total"></span>
+										</div>
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_caption-wrap">
+											<span class="js-slider-caption"></span>
+										</div>
+									</div>
+								</div><!-- /.gallery-slider-controls -->
+							</div>
 						</div>
-					</div>
+					</div><!-- /.gallery__col -->
 
-					<div class="gallery__col">
+					<div class="gallery__col gallery__col_opened">
 						<div class="gallery__item">
-							<img src="images/content/vibe/g2.jpg" alt="">
+							<div class="gallery__slide-wrap" id="gallery-slider-2">
+								<ul class="gallery-slider js-gallery-slider">
+									<li>
+										<img src="images/content/vibe/g9.jpg" alt="" title="Text 1">
+									</li>
+									<li>
+										<img src="images/content/vibe/g10.jpg" alt="" title="Text 2">
+									</li>
+									<li>
+										<img src="images/content/vibe/g11.jpg" alt="" title="Text 3">
+									</li>
+									<li>
+										<img src="images/content/vibe/g12.jpg" alt="" title="Text 4">
+									</li>
+								</ul>
+								<div class="gallery-slider-controls">
+									<div class="gallery-slider-controls__inner">
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_btn-wrap">
+											<span class="slider-btn slider-btn_prev"></span>
+											<span class="slider-btn slider-btn_next"></span>
+										</div>
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_count-wrap">
+											<span class="js-slider-counter"></span>
+											/
+											<span class="js-slider-total"></span>
+										</div>
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_caption-wrap">
+											<span class="js-slider-caption"></span>
+										</div>
+									</div>
+								</div><!-- /.gallery-slider-controls -->
+							</div>
 						</div>
 					</div>
 
@@ -234,11 +302,17 @@
 <!-- JQuery -->
 <script src="lib/jquery3/jquery-3.2.0.min.js"></script>
 
+<!-- Parallax -->
+<script src="lib/parallax/parallax.min.js"></script>
+
 <!-- Masonry plugin -->
 <script src="lib/masonry/masonry.pkgd.min.js"></script>
 
 <!-- Imagesloaded -->
 <script src="lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+<!-- bxSlider -->
+<script src="lib/bxslider/jquery.bxslider.min.js"></script>
 
 <!-- app js -->
 <script src="js/app.js"></script>

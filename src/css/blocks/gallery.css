@@ -19,4 +19,12 @@ below(600px)
 .gallery img {
   width: 100%;
 }
+.gallery__slide-wrap {
+  position: relative;
+}
+.gallery__slide-wrap .bx-wrapper {
+  margin: 0;
+  border: 0;
+  box-shadow: 0;
+}
 /*# sourceMappingURL=src/stylus/blocks/gallery.css.map */

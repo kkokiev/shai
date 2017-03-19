@@ -1,0 +1,59 @@
+.gallery-slider-controls {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 15px;
+  color: light;
+  font-size: 1.8rem;
+  font-family: font-1;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  background: #000;
+}
+.gallery-slider-controls__inner {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.gallery-slider-controls__col {
+  display: table-cell;
+  vertical-align: middle;
+}
+.gallery-slider-controls__col_btn-wrap {
+  width: 40px;
+}
+.gallery-slider-controls__col_count-wrap {
+  padding: 0 15px;
+  width: 80px;
+}
+.gallery-slider-controls__col_caption-wrap {
+  text-align: right;
+}
+.gallery-slider-controls .slider-btn {
+  display: inline-block;
+  vertical-align: top;
+}
+.gallery-slider-controls .slider-btn:first-child {
+  margin-right: 12px;
+}
+.gallery-slider-controls .slider-btn a {
+  display: block;
+  height: 19px;
+  width: 11px;
+}
+.gallery-slider-controls .slider-btn .bx-prev {
+  background: transparent url("images/icon-slide-prev.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.gallery-slider-controls .slider-btn .bx-next {
+  background: transparent url("images/icon-slide-next.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.gallery-slider-controls .slider-btn .bx-prev:hover,
+.gallery-slider-controls .slider-btn .bx-next:hover,
+.gallery-slider-controls .slider-btn .bx-prev:focus,
+.gallery-slider-controls .slider-btn .bx-next:focus {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=src/stylus/blocks/gallery-slider-controls.css.map */

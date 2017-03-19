@@ -1,0 +1,58 @@
+.gallery-slider-controls
+	position absolute
+	left 0
+	bottom 0
+	width 100%
+	padding 12px 15px
+	color light
+	font-size 1.8rem
+	font-family font-1
+	text-transform uppercase
+	line-height 1.2em
+	background #000
+	
+	&__inner
+		display table
+		width 100%
+		table-layout fixed
+	
+	&__col
+		display table-cell
+		vertical-align middle
+		
+		&_btn-wrap
+			width 40px
+			
+		&_count-wrap
+			padding 0 15px
+			width 80px
+			
+		&_caption-wrap
+			text-align right
+			single-line()
+			
+	.slider-btn
+		display inline-block
+		vertical-align top
+		
+		&:first-child
+			margin-right 12px
+		
+	.slider-btn a
+		display block
+		height 19px
+		width 11px
+
+	.slider-btn .bx-prev
+		background transparent url('images/icon-slide-prev.png') 0 0 no-repeat
+		background-size cover
+		
+	.slider-btn .bx-next
+		background transparent url('images/icon-slide-next.png') 0 0 no-repeat
+		background-size cover
+		
+	.slider-btn .bx-prev,
+	.slider-btn .bx-next
+		&:hover,
+		&:focus
+			opacity .5
