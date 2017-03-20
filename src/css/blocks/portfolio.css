@@ -1,0 +1,8 @@
+.portfolio {
+  background: light;
+}
+.portfolio__col {
+  float: left;
+  width: 25%;
+}
+/*# sourceMappingURL=src/stylus/blocks/portfolio.css.map */

@@ -877,6 +877,67 @@ img {
   font-size: 2rem;
   line-height: 1.2em;
 }
+.portfolio-item__link {
+  position: relative;
+  display: block;
+}
+.portfolio-item__img {
+  width: 100%;
+}
+.portfolio-item__overlay {
+  display: block;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.portfolio-item__overlay:hover {
+  opacity: 0.8;
+}
+.portfolio-item__text-wrap {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.portfolio-item__text-wrap-inner {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+.portfolio-item__text {
+  display: inline-block;
+  color: #000;
+  font-family: 'bebasneue-bold', Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid #000;
+}
+.portfolio-menu {
+  padding: 16px 15px 15px;
+  text-align: center;
+}
+.portfolio {
+  background: #fff;
+}
+.portfolio__grid:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.portfolio__col {
+  float: left;
+  width: 25%;
+}
 .project-block {
   padding-bottom: 10px;
 }
@@ -1030,10 +1091,11 @@ img {
   font-family: 'bebasneue-bold', Arial, sans-serif;
   font-size: 1.8rem;
   line-height: 1.2em;
-  lettter-spacing: 0.06;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 .project-menu > li > a:hover,
 .project-menu > li > a:focus {
