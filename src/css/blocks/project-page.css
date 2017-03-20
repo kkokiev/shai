@@ -1,0 +1,32 @@
+.project-page {
+  position: relative;
+  padding: 0 100px 10px;
+below(1100px)
+}
+.project-page__link {
+  position: absolute;
+  top: 50vh;
+  display: inline-block;
+  transform-origin: center;
+below(1100px)
+}
+.project-page__link_prev {
+  left: -20px;
+  transform: rotate(-90deg);
+}
+.project-page__link_next {
+  right: -10px;
+  transform: rotate(90deg);
+}
+.project-page__link a {
+  color: main;
+  font-family: font-1;
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  letter-spacing: 0.06em;
+}
+.project-page__link a:hover,
+.project-page__link a:focus {
+  text-decoration: none;
+}
+/*# sourceMappingURL=src/stylus/blocks/project-page.css.map */

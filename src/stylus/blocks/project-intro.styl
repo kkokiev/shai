@@ -1,35 +1,4 @@
 .project-intro
-	position relative
-	padding 60px 100px 10px
-	
-	+below(1100px)
-		padding 60px 15px 10px
-	
-	&__link
-		position absolute
-		bottom 180px
-		display inline-block
-		transform-origin center
-		
-		+below(1100px)
-			display none
-		
-		&_prev
-			left -20px
-			transform rotate(-90deg)
-		&_next
-			right -10px
-			transform rotate(90deg)
-		a
-			color main
-			font-family font-1
-			font-size 1.8rem
-			line-height 1.2em
-			letter-spacing 0.06em
-			
-			&:hover,
-			&:focus
-				text-decoration none
 	
 	&__row
 		clearfix()
@@ -55,26 +24,17 @@
 		+below(1100px)
 			width 100%
 		
-	&__title
-		font-family font-4
-		font-size 4rem
-		line-height 2em
-		letter-spacing 0.04em
-		text-transform uppercase
+	p
+		margin-bottom 40px
+		font-family font-7
+		font-size 1.2rem
+		line-height 1.4em
 		
-	&__body
+		+below(1100px)
+			margin-bottom 15px
 		
-		p
-			margin-bottom 40px
-			font-family font-7
-			font-size 1.2rem
-			line-height 1.4em
-			
-			+below(1100px)
-				margin-bottom 15px
-			
-			&:last-child
-				margin-bottom 0
-			
-		img
-			width 100%
+		&:last-child
+			margin-bottom 0
+		
+	img
+		width 100%

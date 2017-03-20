@@ -1,0 +1,32 @@
+.project-page
+	position relative
+	padding 0 100px 10px
+	
+	+below(1100px)
+		padding 60px 15px 10px
+		
+	&__link
+		position absolute
+		top 50vh
+		display inline-block
+		transform-origin center
+		
+		+below(1100px)
+			display none
+		
+		&_prev
+			left -20px
+			transform rotate(-90deg)
+		&_next
+			right -10px
+			transform rotate(90deg)
+		a
+			color main
+			font-family font-1
+			font-size 1.8rem
+			line-height 1.2em
+			letter-spacing 0.06em
+			
+			&:hover,
+			&:focus
+				text-decoration none
