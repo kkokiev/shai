@@ -1,0 +1,34 @@
+.intro
+	height 100vh
+	
+	&__video-wrap
+		position relative
+		
+	&__video-inner
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		
+	&__video-bg
+		z-index 1
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		background-position center center
+		background-repeat no-repeat
+		background-size cover
+		
+	&__video
+		position relative
+		z-index 100
+		height 100%
+		width 100%
+		opacity 0
+		tr(.2s)
+		
+		&_show
+			opacity 1

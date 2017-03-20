@@ -3,6 +3,7 @@
   max-width: 630px;
   text-transform: uppercase;
   text-align: center;
+  overflow: hidden;
 }
 .content-box__container > h2 {
   margin-bottom: 23px;

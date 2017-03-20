@@ -1,0 +1,35 @@
+.intro {
+  height: 100vh;
+}
+.intro__video-wrap {
+  position: relative;
+}
+.intro__video-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.intro__video-bg {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro__video {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.intro__video_show {
+  opacity: 1;
+}
+/*# sourceMappingURL=src/stylus/blocks/intro.css.map */

@@ -1,8 +1,37 @@
 .portfolio {
+  width: 100%;
+  overflow: hidden;
   background: light;
 }
-.portfolio__col {
-  float: left;
+.portfolio__grid {
+  margin: 0 -5px;
+  font-size: 0;
+}
+.portfolio__grid .portfolio__col {
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+}
+.portfolio__grid-2 {
+  font-size: 0;
+}
+.portfolio__grid-2 .portfolio__col {
+  display: inline-block;
+  width: 50%;
+}
+.portfolio__grid-3 {
+  font-size: 0;
+}
+.portfolio__grid-3 .portfolio__col {
+  display: inline-block;
+  width: 25%;
+  padding: 5px;
+}
+.portfolio__grid-4 {
+  font-size: 0;
+}
+.portfolio__grid-4 .portfolio__col {
+  display: inline-block;
   width: 25%;
 }
 /*# sourceMappingURL=src/stylus/blocks/portfolio.css.map */

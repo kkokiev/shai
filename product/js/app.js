@@ -17,7 +17,21 @@ if(!(window.console && console.log)) {
 	var $body = $('body');
 	var $navBtn = $('#nav-btn');
 	var $headerNav = $('#header-nav');
+	var $header = $('.header');
 
+
+	/*setup height for the video wrapper*/
+	var setupVideoWrapHeight = function() {
+
+		var headerHeight = $header.innerHeight();
+		var newHeight = $(window).height() - headerHeight;
+		$('.intro__video-wrap').css({
+			height: newHeight
+		});
+	}
+
+	setupVideoWrapHeight();
+	$(window).on('resize', setupVideoWrapHeight);
 
 	/*setup sticky footer*/
 	var paddingHandler = function(){
