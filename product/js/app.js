@@ -18,6 +18,7 @@ if(!(window.console && console.log)) {
 	var $navBtn = $('#nav-btn');
 	var $headerNav = $('#header-nav');
 
+
 	/*setup sticky footer*/
 	var paddingHandler = function(){
 		var footerHeight = $('#footer').innerHeight();
@@ -27,6 +28,8 @@ if(!(window.console && console.log)) {
 	};
 	$(window).on('load', paddingHandler);
 	$(window).on('resize', paddingHandler);
+
+
 
 	/*setup mobile nav */
 	$navBtn.on('click', function(){
@@ -44,6 +47,7 @@ if(!(window.console && console.log)) {
 	};
 
 	$(window).on('resize', navbarHandler);
+
 
 
 	/*setup smooth scroll*/
@@ -82,6 +86,8 @@ if(!(window.console && console.log)) {
 		}
 	});
 
+
+
 	/*setup parallax*/
 	$('.js-parallax-1').parallax({
 		imageSrc: 'images/homepage_parallax_1.jpg',
@@ -94,6 +100,7 @@ if(!(window.console && console.log)) {
 		parallax: 'scroll',
 		bleed: '55'
 	});
+
 
 
 	/*
@@ -173,7 +180,10 @@ if(!(window.console && console.log)) {
 	*/
 
 
-	/*setup counters on the index page*/
+
+	/*
+		setup counters on the index page
+	*/
 	var countStart = true;
 	var setupCount = function() {
 		if($('.js-count').length > 0) {
@@ -213,6 +223,21 @@ if(!(window.console && console.log)) {
 	$(window).resize(function() {
 		setupCount();
 	});
+	/*
+		end setup counters on the index page
+	*/
+
+
+
+	/*
+		setup sticky elements
+	*/
+	$('.project-subheader').sticky({
+		zIndex: 1000
+	});
+	/*
+		end setup sticky elements
+	*/
 
 })(jQuery);
 

@@ -1,5 +1,6 @@
 .project-subheader {
   padding: 0 100px;
+  background: rgba(255,255,255,0.9);
 below(1100px)
 }
 .project-subheader__inner {
