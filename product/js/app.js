@@ -253,5 +253,6 @@ if(!(window.console && console.log)) {
 		end setup sticky elements
 	*/
 
+
 })(jQuery);
 

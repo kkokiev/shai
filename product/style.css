@@ -966,6 +966,7 @@ img {
   text-align: center;
 }
 .portfolio {
+  padding: 15px 0;
   width: 100%;
   overflow: hidden;
   background: #fff;
@@ -1000,6 +1001,61 @@ img {
 .portfolio__grid-4 .portfolio__col {
   display: inline-block;
   width: 25%;
+}
+.portfolio__grid-5:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.portfolio__grid-5 .portfolio__col {
+  z-index: 1;
+  position: relative;
+  float: left;
+}
+.portfolio__grid-5 .portfolio__col_1 {
+  width: 50%;
+}
+.portfolio__grid-5 .portfolio__col_2 {
+  width: 25%;
+}
+.portfolio__grid-5 .portfolio__col_3 {
+  width: 100%;
+}
+.portfolio__grid-icon {
+  z-index: 20;
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  background: transparent url("images/plus.svg") 0 0 no-repeat;
+}
+.portfolio__grid-icon_t-l {
+  top: -15px;
+  left: -15px;
+}
+.portfolio__grid-icon_t-r {
+  top: -15px;
+  right: -15px;
+}
+.portfolio__grid-icon_t-c {
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.portfolio__grid-icon_b-l {
+  bottom: -15px;
+  left: -15px;
+}
+.portfolio__grid-icon_b-r {
+  bottom: -15px;
+  right: -15px;
+}
+.portfolio__grid-icon_c-l {
+  left: -15px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 }
 .project-block {
   padding-bottom: 10px;
