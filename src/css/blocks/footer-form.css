@@ -2,19 +2,19 @@
   display: table;
   width: 100%;
   table-layout: fixed;
-below(600px)
+below(tablet)
 }
 .footer-form__input-col {
   display: table-cell;
   width: 62%;
-below(600px)
+below(tablet)
 }
 .footer-form__submit-col {
   display: table-cell;
   width: 38%;
   padding-left: 10px;
   vertical-align: bottom;
-below(600px)
+below(tablet)
 }
 .footer-form__input-grp {
   margin-bottom: 16px;
@@ -46,7 +46,7 @@ below(600px)
   text-transform: uppercase;
   background: main-light;
   border: 0;
-below(1100px)
+below(large)
 }
 .footer-form__submit:hover,
 .footer-form__submit:focus {

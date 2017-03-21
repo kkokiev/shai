@@ -2,14 +2,14 @@
   display: table;
   width: 100%;
   table-layout: fixed;
-below(480px)
+below(small)
 }
 .footer-contacts__col {
   display: table-cell;
   width: 50%;
   padding-right: 40px;
-below(600px)
-below(480px)
+below(tablet)
+below(small)
 }
 .footer-contacts p {
   margin-bottom: 38px;
@@ -17,7 +17,7 @@ below(480px)
   font-size: 1.2rem;
   line-height: 1.3em;
   text-transform: uppercase;
-below(600px)
+below(tablet)
 }
 .footer-contacts p:last-child {
   margin-bottom: 0;
@@ -32,7 +32,7 @@ below(600px)
 }
 .footer-contacts__social {
   padding-top: 95px;
-below(600px)
-below(480px)
+below(tablet)
+below(small)
 }
 /*# sourceMappingURL=src/stylus/blocks/footer-contacts.css.map */

@@ -4,17 +4,17 @@
 }
 .gallery__col-sizer {
   width: 25%;
-below(600px)
+below(tablet)
 }
 .gallery__col {
   float: left;
   width: 25%;
   padding: 4px;
-below(600px)
+below(tablet)
 }
 .gallery__col_opened {
   width: 50%;
-below(600px)
+below(tablet)
 }
 .gallery__item {
   position: relative;

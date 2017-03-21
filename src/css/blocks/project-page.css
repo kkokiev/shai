@@ -2,14 +2,14 @@
   z-index: 1;
   position: relative;
   padding: 160px 100px 10px;
-below(1100px)
+below(large)
 }
 .project-page__link {
   position: absolute;
   top: 50vh;
   display: inline-block;
   transform-origin: center;
-below(1100px)
+below(large)
 }
 .project-page__link_prev {
   left: -20px;

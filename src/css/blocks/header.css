@@ -9,7 +9,7 @@ below(900px)
   float: left;
   width: 50%;
 below(800px)
-below(480px)
+below(small)
 }
 .header__nav-btn {
   float: right;

@@ -10,7 +10,7 @@
 .portfolio__grid .portfolio__col {
   display: inline-block;
   width: 25%;
-below(600px)
+below(tablet)
 }
 .portfolio__grid-2 {
   font-size: 0;
@@ -18,7 +18,7 @@ below(600px)
 .portfolio__grid-2 .portfolio__col {
   display: inline-block;
   width: 50%;
-below(600px)
+below(tablet)
 }
 .portfolio__grid-3 .portfolio__col {
   z-index: 1;
@@ -27,14 +27,14 @@ below(600px)
 }
 .portfolio__grid-3 .portfolio__col_1 {
   width: 50%;
-below(600px)
+below(tablet)
 }
 .portfolio__grid-3 .portfolio__col_1-half {
   width: 50%;
 }
 .portfolio__grid-3 .portfolio__col_2 {
   width: 25%;
-below(600px)
+below(tablet)
 }
 .portfolio__grid-3 .portfolio__col_3 {
   width: 100%;
@@ -46,7 +46,7 @@ below(600px)
   height: 30px;
   width: 30px;
   background: transparent url("images/plus.svg") 0 0 no-repeat;
-below(600px)
+below(tablet)
 }
 .portfolio__grid-icon_t-l {
   top: -15px;

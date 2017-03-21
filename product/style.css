@@ -229,7 +229,7 @@ img {
   line-height: 1.13em;
   letter-spacing: 0.07em;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content-box__container > h2 {
     margin-bottom: 15px;
     font-size: 3.5rem;
@@ -241,7 +241,7 @@ img {
   line-height: 1.2em;
   letter-spacing: 0.02em;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content-box__container > h3 {
     font-size: 2rem;
   }
@@ -252,7 +252,7 @@ img {
   font-size: 1.4rem;
   line-height: 1.4em;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content-box__container > p {
     font-size: 1rem;
     line-height: 1.2em;
@@ -264,7 +264,7 @@ img {
   margin: 30px auto 25px;
   background: #000;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content-box__container > hr {
     height: 1px;
     width: 32px;
@@ -279,14 +279,14 @@ img {
   clear: both;
   content: '';
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content-items {
     max-width: 270px;
     margin: 0 auto;
     padding-top: 0;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content-items__xs-single-col .content-items__col {
     width: 100%;
     margin-bottom: 10px;
@@ -300,7 +300,7 @@ img {
   max-width: 130px;
   margin: 0 auto 10px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content-items__col > img {
     max-width: 90px;
     margin: 0 auto;
@@ -320,7 +320,7 @@ img {
   font-size: 9rem;
   line-height: 1.15em;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content-items__count {
     margin-bottom: 0;
     font-size: 3.6rem;
@@ -330,7 +330,7 @@ img {
   background: #fff;
   padding: 40px 0;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .content__row {
     padding: 15px 0;
   }
@@ -357,7 +357,7 @@ img {
   width: 50%;
   padding-right: 40px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer-contacts__col {
     padding-right: 10px;
   }
@@ -380,7 +380,7 @@ img {
   line-height: 1.3em;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer-contacts p {
     margin-bottom: 12px;
   }
@@ -399,7 +399,7 @@ img {
 .footer-contacts__social {
   padding-top: 95px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer-contacts__social {
     padding-top: 45px;
   }
@@ -414,7 +414,7 @@ img {
   width: 100%;
   table-layout: fixed;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer-form {
     display: block;
   }
@@ -423,7 +423,7 @@ img {
   display: table-cell;
   width: 62%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer-form__input-col {
     display: block;
     width: 100%;
@@ -436,7 +436,7 @@ img {
   padding-left: 10px;
   vertical-align: bottom;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer-form__submit-col {
     display: block;
     padding-left: 0;
@@ -536,7 +536,7 @@ img {
     width: 50%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer__contact-wrap {
     width: 100%;
     padding-right: 0;
@@ -557,7 +557,7 @@ img {
     border-left: 0;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer__work-form-wrap {
     width: 100%;
   }
@@ -574,7 +574,7 @@ img {
 .footer__work-form {
   padding-top: 90px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer__work-form {
     padding-top: 0;
   }
@@ -587,7 +587,7 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .footer__title {
     margin-bottom: 20px;
   }
@@ -665,7 +665,7 @@ img {
 .gallery__col-sizer {
   width: 25%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .gallery__col-sizer {
     width: 50%;
   }
@@ -675,7 +675,7 @@ img {
   width: 25%;
   padding: 4px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .gallery__col {
     width: 50%;
   }
@@ -683,7 +683,7 @@ img {
 .gallery__col_opened {
   width: 50%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .gallery__col_opened {
     width: 100%;
   }
@@ -1068,7 +1068,7 @@ img {
   display: inline-block;
   width: 25%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .portfolio__grid .portfolio__col {
     width: 50%;
   }
@@ -1080,7 +1080,7 @@ img {
   display: inline-block;
   width: 50%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .portfolio__grid-2 .portfolio__col {
     width: 100%;
   }
@@ -1098,7 +1098,7 @@ img {
 .portfolio__grid-3 .portfolio__col_1 {
   width: 50%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .portfolio__grid-3 .portfolio__col_1 {
     width: 100%;
   }
@@ -1109,7 +1109,7 @@ img {
 .portfolio__grid-3 .portfolio__col_2 {
   width: 25%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .portfolio__grid-3 .portfolio__col_2 {
     width: 50%;
   }
@@ -1125,7 +1125,7 @@ img {
   width: 30px;
   background: transparent url("images/plus.svg") 0 0 no-repeat;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .portfolio__grid-icon {
     display: none;
   }
@@ -1161,7 +1161,7 @@ img {
 .project-block {
   padding-bottom: 10px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .project-block {
     padding: 0 15px 10px;
   }
@@ -1425,7 +1425,7 @@ img {
   padding-top: 116px;
   padding-bottom: 20px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .vibe__intro {
     padding-top: 70px;
     padding-bottom: 10px;
@@ -1438,7 +1438,7 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .vibe__title {
     font-size: 5rem;
   }

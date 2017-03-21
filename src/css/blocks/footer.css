@@ -6,36 +6,36 @@
   padding: 40px 54px 40px;
   color: light;
   background: main;
-below(1100px)
+below(large)
 }
 .footer__col {
   padding-top: 5px;
   padding-bottom: 10px;
-below(1100px)
+below(large)
 }
 .footer__contact-wrap {
   float: left;
   width: 28%;
   padding-right: 45px;
-below(1100px)
-below(600px)
+below(large)
+below(tablet)
 }
 .footer__work-form-wrap {
   float: right;
   width: 28%;
   padding-left: 10px;
   border-left: 1px solid main-light;
-below(1100px)
-below(600px)
+below(large)
+below(tablet)
 }
 .footer__contacts-wrap {
   float: left;
   width: 44%;
-below(1100px)
+below(large)
 }
 .footer__work-form {
   padding-top: 90px;
-below(600px)
+below(tablet)
 }
 .footer__title {
   margin-bottom: 15px;
@@ -44,6 +44,6 @@ below(600px)
   line-height: 1em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-below(600px)
+below(tablet)
 }
 /*# sourceMappingURL=src/stylus/blocks/footer.css.map */

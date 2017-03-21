@@ -2,19 +2,19 @@
   float: left;
   width: 23%;
   padding-right: 20px;
-below(1100px)
+below(large)
 }
 .project-intro__col-2 {
   float: left;
   width: 54%;
-below(1100px)
+below(large)
 }
 .project-intro p {
   margin-bottom: 40px;
   font-family: font-7;
   font-size: 1.2rem;
   line-height: 1.4em;
-below(1100px)
+below(large)
 }
 .project-intro p:last-child {
   margin-bottom: 0;
