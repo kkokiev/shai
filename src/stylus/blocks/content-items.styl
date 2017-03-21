@@ -2,6 +2,19 @@
 	padding-top 25px
 	clearfix()
 	
+	+below(700px)
+		max-width 270px
+		margin 0 auto
+		padding-top 0
+		
+	&__xs-single-col
+		
+		+below(700px)
+		
+			.content-items__col
+				width 100%
+				margin-bottom 10px
+	
 	&__col
 		float left
 		width 33.33%
@@ -9,6 +22,10 @@
 		> img
 			max-width 130px
 			margin 0 auto 10px
+			
+			+below(700px)
+				max-width 90px
+				margin 0 auto
 			
 		> p
 			padding 0 10px
@@ -23,3 +40,8 @@
 		font-family font-4
 		font-size 9rem
 		line-height 1.15em
+		
+		+below(700px)
+			margin-bottom 0
+			font-size 3.6rem
+			

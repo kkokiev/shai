@@ -1,5 +1,6 @@
 .content-items {
   padding-top: 25px;
+below(700px)
 }
 .content-items__col {
   float: left;
@@ -8,6 +9,7 @@
 .content-items__col > img {
   max-width: 130px;
   margin: 0 auto 10px;
+below(700px)
 }
 .content-items__col > p {
   padding: 0 10px;
@@ -22,5 +24,6 @@
   font-family: font-4;
   font-size: 9rem;
   line-height: 1.15em;
+below(700px)
 }
 /*# sourceMappingURL=src/stylus/blocks/content-items.css.map */

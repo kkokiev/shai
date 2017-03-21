@@ -11,23 +11,27 @@
   font-size: 10rem;
   line-height: 1.13em;
   letter-spacing: 0.07em;
+below(700px)
 }
 .content-box__container > h3 {
   font-family: font-1;
   font-size: 2.2rem;
   line-height: 1.2em;
   letter-spacing: 0.02em;
+below(700px)
 }
 .content-box__container > p {
   margin-bottom: 10px;
   font-family: font-6;
   font-size: 1.4rem;
   line-height: 1.4em;
+below(700px)
 }
 .content-box__container > hr {
   height: 4px;
   width: 86px;
   margin: 30px auto 25px;
   background: main;
+below(700px)
 }
 /*# sourceMappingURL=src/stylus/blocks/content-box.css.map */

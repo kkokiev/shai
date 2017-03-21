@@ -229,11 +229,22 @@ img {
   line-height: 1.13em;
   letter-spacing: 0.07em;
 }
+@media only screen and (max-width: 700px) {
+  .content-box__container > h2 {
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+  }
+}
 .content-box__container > h3 {
   font-family: 'bebasneue-bold', Arial, sans-serif;
   font-size: 2.2rem;
   line-height: 1.2em;
   letter-spacing: 0.02em;
+}
+@media only screen and (max-width: 700px) {
+  .content-box__container > h3 {
+    font-size: 2rem;
+  }
 }
 .content-box__container > p {
   margin-bottom: 10px;
@@ -241,11 +252,24 @@ img {
   font-size: 1.4rem;
   line-height: 1.4em;
 }
+@media only screen and (max-width: 700px) {
+  .content-box__container > p {
+    font-size: 1rem;
+    line-height: 1.2em;
+  }
+}
 .content-box__container > hr {
   height: 4px;
   width: 86px;
   margin: 30px auto 25px;
   background: #000;
+}
+@media only screen and (max-width: 700px) {
+  .content-box__container > hr {
+    height: 1px;
+    width: 32px;
+    margin: 15px auto;
+  }
 }
 .content-items {
   padding-top: 25px;
@@ -255,6 +279,19 @@ img {
   clear: both;
   content: '';
 }
+@media only screen and (max-width: 700px) {
+  .content-items {
+    max-width: 270px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content-items__xs-single-col .content-items__col {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 .content-items__col {
   float: left;
   width: 33.33%;
@@ -262,6 +299,12 @@ img {
 .content-items__col > img {
   max-width: 130px;
   margin: 0 auto 10px;
+}
+@media only screen and (max-width: 700px) {
+  .content-items__col > img {
+    max-width: 90px;
+    margin: 0 auto;
+  }
 }
 .content-items__col > p {
   padding: 0 10px;
@@ -276,6 +319,12 @@ img {
   font-family: 'museosans-900', Arial, sans-serif;
   font-size: 9rem;
   line-height: 1.15em;
+}
+@media only screen and (max-width: 700px) {
+  .content-items__count {
+    margin-bottom: 0;
+    font-size: 3.6rem;
+  }
 }
 .content__row {
   background: #fff;
