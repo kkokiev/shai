@@ -19,6 +19,28 @@ if(!(window.console && console.log)) {
 	var $headerNav = $('#header-nav');
 	var $header = $('.header');
 
+	var testMobile;
+	var isMobile = {
+		Android: function() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+
 
 	/*setup height for the video wrapper*/
 	var setupVideoWrapHeight = function() {
@@ -102,18 +124,38 @@ if(!(window.console && console.log)) {
 
 
 
-	/*setup parallax*/
-	$('.js-parallax-1').parallax({
-		imageSrc: 'images/homepage_parallax_1.jpg',
-		parallax: 'scroll',
-		bleed: '55'
-	});
+	/*
+		setup parallax
+	*/
+	var parallaxElements = function(){
 
-	$('.js-parallax-2').parallax({
-		imageSrc: 'images/homepage_parallax_2.jpg',
-		parallax: 'scroll',
-		bleed: '55'
-	});
+		$paraEl1 = $('.js-parallax-1'),
+		$paraEl2 = $('.js-parallax-2');
+
+		testMobile = isMobile.any();
+
+		if(!testMobile) {
+
+			$paraEl1.parallax({
+				imageSrc: 'images/homepage_parallax_1.jpg',
+				parallax: 'scroll',
+				bleed: '55'
+			});
+
+			$paraEl2.parallax({
+				imageSrc: 'images/homepage_parallax_2.jpg',
+				parallax: 'scroll',
+				bleed: '55'
+			});
+		} else {
+			$paraEl1.css({'background-image': 'url(images/homepage_parallax_1.jpg)'});
+			$paraEl2.css({'background-image': 'url(images/homepage_parallax_2.jpg)'});
+		}
+
+	};
+
+	parallaxElements();
+
 
 
 
