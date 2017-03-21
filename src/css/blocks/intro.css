@@ -22,14 +22,46 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.intro__video-play-icon {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 71px;
+  width: 71px;
+}
+.intro__video-play-icon img {
+  width: 100%;
+}
 .intro__video {
   position: relative;
-  z-index: 100;
+  z-index: 3;
   height: 100%;
   width: 100%;
   opacity: 0;
 }
 .intro__video_show {
   opacity: 1;
+}
+.intro__arrow {
+  display: block;
+  z-index: 4;
+  position: absolute;
+  height: 22px;
+  width: 37px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 44px;
+  margin: auto auto 0;
+}
+.intro__arrow:hover {
+  opacity: 0.5;
+}
+.intro__arrow img {
+  width: 100%;
 }
 /*# sourceMappingURL=src/stylus/blocks/intro.css.map */

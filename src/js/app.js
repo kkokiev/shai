@@ -246,9 +246,23 @@ if(!(window.console && console.log)) {
 	/*
 		setup sticky elements
 	*/
-	$('.project-subheader').sticky({
-		zIndex: 1000
-	});
+
+	var stickyElements = (function() {
+
+		var $introHeader = $('.js-intro-header'),
+		introHeaderHeight = $introHeader.innerHeight();
+
+		$introHeader.sticky({
+			zIndex: 1000
+		});
+
+		$('.js-portfolio-menu').sticky({
+			zIndex: 1000,
+			topSpacing: introHeaderHeight
+		});
+
+	})();
+
 	/*
 		end setup sticky elements
 	*/

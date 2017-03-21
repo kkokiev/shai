@@ -737,9 +737,23 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.intro__video-play-icon {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 71px;
+  width: 71px;
+}
+.intro__video-play-icon img {
+  width: 100%;
+}
 .intro__video {
   position: relative;
-  z-index: 100;
+  z-index: 3;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -750,6 +764,24 @@ img {
 }
 .intro__video_show {
   opacity: 1;
+}
+.intro__arrow {
+  display: block;
+  z-index: 4;
+  position: absolute;
+  height: 22px;
+  width: 37px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 44px;
+  margin: auto auto 0;
+}
+.intro__arrow:hover {
+  opacity: 0.5;
+}
+.intro__arrow img {
+  width: 100%;
 }
 .logo__link {
   display: inline-block;
@@ -964,6 +996,7 @@ img {
 .portfolio-menu {
   padding: 16px 15px 15px;
   text-align: center;
+  background: #fff;
 }
 .portfolio {
   padding: 15px 0;
@@ -1069,15 +1102,6 @@ img {
 }
 .project-block__col:last-child {
   padding-left: 5px;
-}
-@media only screen and (max-width: 1100px) {
-  .project-header {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
 }
 .project-intro__row:after {
   display: table;
@@ -1209,7 +1233,7 @@ img {
 .project-page {
   z-index: 1;
   position: relative;
-  padding: 0 100px 10px;
+  padding: 160px 100px 10px;
 }
 @media only screen and (max-width: 1100px) {
   .project-page {
@@ -1247,6 +1271,11 @@ img {
   text-decoration: none;
 }
 .project-subheader {
+  z-index: 1000;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
   padding: 0 100px;
   background: rgba(255,255,255,0.9);
 }
