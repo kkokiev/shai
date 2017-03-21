@@ -68,7 +68,8 @@ if(!(window.console && console.log)) {
 
 
 	/*setup mobile nav */
-	$navBtn.on('click', function(){
+	$navBtn.on('click', function(e){
+		e.preventDefault();
 		$(this).toggleClass('nav-btn_opened')
 		$headerNav.stop().slideToggle();
 	});
@@ -295,7 +296,7 @@ if(!(window.console && console.log)) {
 		introHeaderHeight = $introHeader.innerHeight();
 
 		$introHeader.sticky({
-			zIndex: 1000
+			zIndex: 1100
 		});
 
 		$('.js-portfolio-menu').sticky({

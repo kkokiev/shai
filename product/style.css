@@ -330,12 +330,17 @@ img {
   background: #fff;
   padding: 40px 0;
 }
+@media only screen and (max-width: 700px) {
+  .content__row {
+    padding: 15px 0;
+  }
+}
 .fixed-header {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1100;
 }
 .footer-contacts {
   display: table;
@@ -372,7 +377,7 @@ img {
   margin-bottom: 38px;
   font-family: 'quicksand-light', Arial, sans-serif;
   font-size: 1.2rem;
-  line-height: 1.33em;
+  line-height: 1.3em;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 600px) {
