@@ -3,6 +3,30 @@
   width: 100%;
   overflow: hidden;
   background: light;
+  perspective: 1300px;
+}
+.portfolio .portfolio__col {
+  opacity: 0;
+}
+.portfolio .portfolio__col_visible {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+  transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+  -webkit-animation: fallPerspective 0.6s ease-in-out forwards;
+  animation: fallPerspective 0.6s ease-in-out forwards;
+}
+.portfolio .portfolio__col_visible:nth-child(2n) {
+  -webkit-animation: fallPerspective 0.8s ease-in-out forwards;
+  animation: fallPerspective 0.8s ease-in-out forwards;
+}
+.portfolio .portfolio__col_visible:nth-child(3n) {
+  -webkit-animation: fallPerspective 1s ease-in-out forwards;
+  animation: fallPerspective 1s ease-in-out forwards;
+}
+.portfolio .portfolio__col_visible:nth-child(4n) {
+  -webkit-animation: fallPerspective 1.2s ease-in-out forwards;
+  animation: fallPerspective 1.2s ease-in-out forwards;
 }
 .portfolio__grid {
   font-size: 0;
@@ -75,5 +99,39 @@ below(tablet)
   top: 0;
   bottom: 0;
   margin: auto 0;
+}
+@-webkit-keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@-o-keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes fallPerspective {
+  100% {
+    -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    transform: translateZ(0px) translateY(0px) rotateX(0deg);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=src/stylus/blocks/portfolio.css.map */
