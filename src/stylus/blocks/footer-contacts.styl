@@ -22,7 +22,14 @@
 			
 			&:last-child
 				margin 0
-			
+				
+		&:nth-child(2)
+			+below(large)
+				text-align right
+				
+			+below(small)
+				text-align left
+				
 	p
 		margin-bottom 38px
 		font-family font-5

@@ -373,6 +373,16 @@ img {
     margin: 0;
   }
 }
+@media only screen and (max-width: 1100px) {
+  .footer-contacts__col:nth-child(2) {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-contacts__col:nth-child(2) {
+    text-align: left;
+  }
+}
 .footer-contacts p {
   margin-bottom: 38px;
   font-family: 'quicksand-light', Arial, sans-serif;
@@ -1452,10 +1462,13 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.social-list *:after {
-  content: '';
+.social-list {
+  display: inline-block;
+}
+.social-list:after {
   display: table;
   clear: both;
+  content: '';
 }
 .social-list > li {
   float: left;

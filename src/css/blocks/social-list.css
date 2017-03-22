@@ -1,7 +1,5 @@
-.social-list *:after {
-  content: '';
-  display: table;
-  clear: both;
+.social-list {
+  display: inline-block;
 }
 .social-list > li {
   float: left;

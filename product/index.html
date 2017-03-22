@@ -70,6 +70,56 @@
 			</div>
 		</div>
 
+		<!-- setup youtube video -->
+<script>
+
+	// Load the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+	tag.src = "https://www.youtube.com/player_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	// Replace the '#intro-video' element with an <iframe> and
+	// YouTube player after the API code downloads.
+	var player;
+	function onYouTubePlayerAPIReady() {
+
+		setTimeout(function(){
+			player = new YT.Player('intro-video', {
+				playerVars: {
+					rel: 0,
+					autoplay: 1,
+					loop: 1,
+					controls: 0,
+					showinfo: 0,
+					autohide: 0,
+					modestbranding: 1,
+					vq: 'hd1080',
+					playlist: 'n6gFi0b1S24'
+				},
+				videoId: 'n6gFi0b1S24',
+				fitToBackground: true,
+				events: {
+					'onStateChange': showPlayer,
+					'onReady': onPlayerReady,
+				},
+			});
+		}, 1000);
+		
+	}
+
+	function showPlayer(event){
+		if(player.getPlayerState() === 1) {
+			$('.intro__video').addClass('intro__video_show')
+		}
+	}
+
+	function onPlayerReady(event){
+		player.mute();
+	}
+	
+</script>
+
 		<div class="content__row" id="about">
 			
 			<div class="content-box">
@@ -665,51 +715,6 @@
 
 
 </div><!-- /.main-wrapper -->
-
-<!-- setup youtube video -->
-<script>
-
-	// Load the IFrame Player API code asynchronously.
-	var tag = document.createElement('script');
-	tag.src = "https://www.youtube.com/player_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	// Replace the '#intro-video' element with an <iframe> and
-	// YouTube player after the API code downloads.
-	var player;
-	function onYouTubePlayerAPIReady() {
-
-		setTimeout(function(){
-			player = new YT.Player('intro-video', {
-				playerVars: {
-					rel: 0,
-					autoplay: 0,
-					loop: 1,
-					controls: 0,
-					showinfo: 0,
-					autohide: 0,
-					modestbranding: 1,
-					vq: 'hd1080',
-					playlist: 'n6gFi0b1S24'
-				},
-				videoId: 'n6gFi0b1S24',
-				fitToBackground: true,
-				events: {
-					'onStateChange': showPlayer,
-				},
-			});
-		}, 1000);
-		
-	}
-
-	function showPlayer(event){
-		if(player.getPlayerState() === 1) {
-			$('.intro__video').addClass('intro__video_show')
-		}
-	}
-	
-</script>
 
 <!-- JQuery -->
 <script src="lib/jquery2/jquery.min.js"></script>
