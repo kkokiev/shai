@@ -385,7 +385,7 @@ img {
 }
 .footer-contacts p {
   margin-bottom: 38px;
-  font-family: 'quicksand-light', Arial, sans-serif;
+  font-family: 'museosans-500', Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.3em;
   text-transform: uppercase;
@@ -463,7 +463,7 @@ img {
   width: 100%;
   padding: 6px 0;
   color: #fff;
-  font-family: 'quicksand-regular', Arial, sans-serif;
+  font-family: 'museosans-500', Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.33em;
   text-transform: uppercase;
@@ -477,7 +477,7 @@ img {
 .footer-form__submit {
   width: 100%;
   padding: 6px 12px;
-  font-family: 'quicksand-regular', Arial, sans-serif;
+  font-family: 'museosans-500', Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.33em;
   text-transform: uppercase;
@@ -782,6 +782,8 @@ img {
 }
 .intro__video-wrap {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .intro__video-inner {
   position: absolute;
@@ -816,7 +818,9 @@ img {
   width: 100%;
 }
 .intro__video {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 3;
   height: 100%;
   width: 100%;

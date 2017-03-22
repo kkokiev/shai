@@ -3,6 +3,8 @@
 }
 .intro__video-wrap {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .intro__video-inner {
   position: absolute;
@@ -37,7 +39,9 @@
   width: 100%;
 }
 .intro__video {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 3;
   height: 100%;
   width: 100%;
