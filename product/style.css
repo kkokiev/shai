@@ -178,20 +178,6 @@ table {
   font-style: normal;
 }
 @font-face {
-  font-family: 'quicksand-light';
-  src: url("fonts/quicksand/quicksand-light-webfont.woff") format('woff');
-  src: url("fonts/quicksand/quicksand-light-webfont.woff2") format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'quicksand-regular';
-  src: url("fonts/quicksand/quicksand-regular-webfont.woff") format('woff');
-  src: url("fonts/quicksand/quicksand-regular-webfont.woff2") format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'agaramond-regular';
   src: url("fonts/agaramond/agaramondpro-regular.otf");
   font-weight: normal;
@@ -248,7 +234,7 @@ img {
 }
 .content-box__container > p {
   margin-bottom: 10px;
-  font-family: 'quicksand-regular', Arial, sans-serif;
+  font-family: 'museosans-500', Arial, sans-serif;
   font-size: 1.4rem;
   line-height: 1.4em;
 }
@@ -308,7 +294,7 @@ img {
 }
 .content-items__col > p {
   padding: 0 10px;
-  font-family: 'quicksand-regular', Arial, sans-serif;
+  font-family: 'museosans-500', Arial, sans-serif;
   font-size: 1.1rem;
   line-height: 1.5em;
   letter-spacing: 0.12em;
