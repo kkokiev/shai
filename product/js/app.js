@@ -345,70 +345,57 @@ if(!(window.console && console.log)) {
 		resizeVideo();
 	});
 
-})(jQuery);
 
+	/*
+		make portfolio items animated
+	*/
+	var setupPortfolioAnimation = function() {
 
-/*make portfolio items animated*/
-(function() {
+		var win = $(window),
+		$portfolio = $('.portfolio');
 
-	$.fn.visible = function(partial) {
+		if($portfolio.length) {
+			$.fn.visible = function(partial) {
 	
-		var $t = $(this),
-			$w = $(window),
-			viewTop = $w.scrollTop() - 200,
-			viewBottom = viewTop + $w.height(),
-			_top = $t.offset().top,
-			_bottom = _top + $t.height(),
-			compareTop = partial === true ? _bottom : _top,
-			compareBottom = partial === true ? _top : _bottom;
-	
-		return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+				var $t = $(this),
+					$w = $(window),
+					viewTop = $w.scrollTop() - 200,
+					viewBottom = viewTop + $w.height(),
+					_top = $t.offset().top,
+					_bottom = _top + $t.height(),
+					compareTop = partial === true ? _bottom : _top,
+					compareBottom = partial === true ? _top : _bottom;
+			
+				return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
-	};
+			};
 
-	// var win = $(window),
-	// 	items = $(".portfolio__col");
+			var win = $(window),
+			$portfolio = $('.portfolio');
 
-	// win.scroll(function(event) {
-	// 	items.each(function(i, el) {
-	// 		var el = $(el);
-	// 		if (el.visible(true)) {
-	// 			el.addClass("portfolio__col_visible"); 
-	// 		} 
-	// 	});
-	
-	// });
-	// 	win.load(function(event) {
-	// 	items.each(function(i, el) {
-	// 		var el = $(el);
-	// 		if (el.visible(true)) {
-	// 			el.addClass("portfolio__col_visible"); 
-	// 		} 
-	// 	});
-	// })
+			function showPortfolioItems() {
+				$portfolio.addClass("portfolio_show");
+				//fallback for realy old browserd
+				setTimeout(function(){
+					$portfolio.find('.portfolio__col').css({opacity: 1})
+				}, 4000);
+			}
 
-	var win = $(window),
-	$portfolio = $('.portfolio');
+			win.scroll(function(event) {
+				if ($portfolio.visible(true)) {
+					showPortfolioItems()
+				} 
+			});
 
-	function showPortfolioItems() {
-		$portfolio.addClass("portfolio_show");
-		//fallback for realy old browserd
-		setTimeout(function(){
-			$portfolio.find('.portfolio__col').css({opacity: 1})
-		}, 4000);
+			win.load(function(event) {
+				if ($portfolio.visible(true)) {
+					showPortfolioItems()
+				} 
+			});
+		}
 	}
 
-	win.scroll(function(event) {
-		if ($portfolio.visible(true)) {
-			showPortfolioItems()
-		} 
-	});
+	setupPortfolioAnimation();
 
-	win.load(function(event) {
-		if ($portfolio.visible(true)) {
-			showPortfolioItems()
-		} 
-	});
-	
 })(jQuery);
 
