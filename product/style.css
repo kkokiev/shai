@@ -831,6 +831,11 @@ img {
   bottom: 44px;
   margin: auto auto 0;
 }
+@media only screen and (max-width: 600px) {
+  .intro__arrow {
+    bottom: 20px;
+  }
+}
 .intro__arrow:hover {
   opacity: 0.5;
 }

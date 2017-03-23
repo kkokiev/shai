@@ -70,7 +70,7 @@ if(!(window.console && console.log)) {
 	/*setup mobile nav */
 	$navBtn.on('click', function(e){
 		e.preventDefault();
-		$(this).toggleClass('nav-btn_opened')
+		$(this).toggleClass('nav-btn_opened');
 		$headerNav.stop().slideToggle();
 	});
 
