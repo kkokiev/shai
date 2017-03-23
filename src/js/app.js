@@ -311,9 +311,45 @@ if(!(window.console && console.log)) {
 	*/
 
 
+	/*
+		resize video
+	*/
+	var resizeVideo = function(){
+		
+		$video = $('#intro-video');
+		var winHeight = $(window).innerHeight();
+		var winWidth = $(window).innerWidth();
+			
+		var aspectRatioVideo = 0.5625;
+		var aspectRatioWindow = winHeight / winWidth;
+
+		if(aspectRatioWindow > aspectRatioVideo ){
+
+			$video.css("height", winHeight); 
+			$video.css("width", winHeight / aspectRatioVideo); 
+			$video.css("left", -Math.abs($video.width() - winWidth)/2); 
+
+		} else {
+
+			$video.css("width", winWidth); 
+			$video.css("height", winWidth * aspectRatioVideo); 
+			$video.css("top", -Math.abs($video.height() - winHeight)/2);
+			
+		}
+
+	}
+
+	resizeVideo();
+
+	$(window).resize(function() {
+		resizeVideo();
+	});
+
 })(jQuery);
 
-(function($) {
+
+/*make portfolio items animated*/
+(function() {
 
 	$.fn.visible = function(partial) {
 	
@@ -326,34 +362,52 @@ if(!(window.console && console.log)) {
 			compareTop = partial === true ? _bottom : _top,
 			compareBottom = partial === true ? _top : _bottom;
 	
-	return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+		return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
 	};
+
+	// var win = $(window),
+	// 	items = $(".portfolio__col");
+
+	// win.scroll(function(event) {
+	// 	items.each(function(i, el) {
+	// 		var el = $(el);
+	// 		if (el.visible(true)) {
+	// 			el.addClass("portfolio__col_visible"); 
+	// 		} 
+	// 	});
 	
-})(jQuery);
-
-
-$(function(){
+	// });
+	// 	win.load(function(event) {
+	// 	items.each(function(i, el) {
+	// 		var el = $(el);
+	// 		if (el.visible(true)) {
+	// 			el.addClass("portfolio__col_visible"); 
+	// 		} 
+	// 	});
+	// })
 
 	var win = $(window),
-		items = $(".portfolio__col");
+	$portfolio = $('.portfolio');
+
+	function showPortfolioItems() {
+		$portfolio.addClass("portfolio_show");
+		//fallback for realy old browserd
+		setTimeout(function(){
+			$portfolio.find('.portfolio__col').css({opacity: 1})
+		}, 4000);
+	}
 
 	win.scroll(function(event) {
-		items.each(function(i, el) {
-			var el = $(el);
-			if (el.visible(true)) {
-				el.addClass("portfolio__col_visible"); 
-			} 
-		});
-	
+		if ($portfolio.visible(true)) {
+			showPortfolioItems()
+		} 
 	});
-		win.load(function(event) {
-		items.each(function(i, el) {
-			var el = $(el);
-			if (el.visible(true)) {
-				el.addClass("portfolio__col_visible"); 
-			} 
-		});
-	})
 
-});
+	win.load(function(event) {
+		if ($portfolio.visible(true)) {
+			showPortfolioItems()
+		} 
+	});
+	
+})(jQuery);

@@ -366,25 +366,49 @@ if(!(window.console && console.log)) {
 
 	};
 
+	// var win = $(window),
+	// 	items = $(".portfolio__col");
+
+	// win.scroll(function(event) {
+	// 	items.each(function(i, el) {
+	// 		var el = $(el);
+	// 		if (el.visible(true)) {
+	// 			el.addClass("portfolio__col_visible"); 
+	// 		} 
+	// 	});
+	
+	// });
+	// 	win.load(function(event) {
+	// 	items.each(function(i, el) {
+	// 		var el = $(el);
+	// 		if (el.visible(true)) {
+	// 			el.addClass("portfolio__col_visible"); 
+	// 		} 
+	// 	});
+	// })
+
 	var win = $(window),
-		items = $(".portfolio__col");
+	$portfolio = $('.portfolio');
+
+	function showPortfolioItems() {
+		$portfolio.addClass("portfolio_show");
+		//fallback for realy old browserd
+		setTimeout(function(){
+			$portfolio.find('.portfolio__col').css({opacity: 1})
+		}, 4000);
+	}
 
 	win.scroll(function(event) {
-		items.each(function(i, el) {
-			var el = $(el);
-			if (el.visible(true)) {
-				el.addClass("portfolio__col_visible"); 
-			} 
-		});
-	
+		if ($portfolio.visible(true)) {
+			showPortfolioItems()
+		} 
 	});
-		win.load(function(event) {
-		items.each(function(i, el) {
-			var el = $(el);
-			if (el.visible(true)) {
-				el.addClass("portfolio__col_visible"); 
-			} 
-		});
-	})
+
+	win.load(function(event) {
+		if ($portfolio.visible(true)) {
+			showPortfolioItems()
+		} 
+	});
 	
 })(jQuery);
+
