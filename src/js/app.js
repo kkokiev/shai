@@ -149,8 +149,8 @@ if(!(window.console && console.log)) {
 				bleed: '55'
 			});
 		} else {
-			$paraEl1.css({'background-image': 'url(images/homepage_parallax_1.jpg)'});
-			$paraEl2.css({'background-image': 'url(images/homepage_parallax_2.jpg)'});
+			$paraEl1.css({'background-image': 'url(images/homepage_parallax_1_mob.jpg)'});
+			$paraEl2.css({'background-image': 'url(images/homepage_parallax_2_mob.jpg)'});
 		}
 
 	};
