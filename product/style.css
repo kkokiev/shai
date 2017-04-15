@@ -1356,6 +1356,37 @@ img {
     font-size: 2.5rem;
   }
 }
+.project-menu {
+  display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  .project-menu {
+    display: none;
+  }
+}
+.project-menu > li {
+  float: left;
+  margin-right: 20px;
+}
+.project-menu > li:last-child {
+  margin-right: 0;
+}
+.project-menu > li > a {
+  display: block;
+  color: #000;
+  font-family: 'bebasneue-bold', Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.project-menu > li > a:hover,
+.project-menu > li > a:focus {
+  border-bottom: 1px solid #000;
+}
 .project-page {
   z-index: 1;
   position: relative;
