@@ -1,5 +1,6 @@
 .content-box {
   margin: 0 auto;
+  padding: 0 10px;
   max-width: 630px;
   text-transform: uppercase;
   text-align: center;

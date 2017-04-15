@@ -61,7 +61,7 @@
   right: 0;
   bottom: 44px;
   margin: auto auto 0;
-below(600px)
+below(large)
 }
 .intro__arrow:hover {
   opacity: 0.5;
