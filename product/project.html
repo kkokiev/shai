@@ -8,7 +8,8 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<!-- bxslider -->
+	<link href="lib/bxslider/jquery.bxslider.min.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 </head>
 
@@ -50,27 +51,38 @@
 			</header>
 		</div><!-- /.project-header -->
 
-		<div class="project-subheader">
-			<div class="project-subheader__inner">
-				<div class="project-subheader__title-wrap">
-					<h1 class="project-subheader__title">Curver</h1>
+		<div class="project-intro">
+			<h1 class="project-intro__title">Curver</h1>
+
+			<div class="project-menu-mob project-menu-mob_project-page">
+				<div class="project-menu-mob__col">
+					<a 
+						href="#" 
+						class="project-menu-mob__btn project-menu-mob__btn_prev"
+						title="Previous category"
+					>Prev</a>
 				</div>
-
-				<div class="project-subheader__menu-wrap">
-
-					<ul class="project-menu">
-						<li class="active"><a href="#">Branding</a></li>
-						<li><a href="#">Logo</a></li>
-						<li><a href="#">Packaging</a></li>
-						<li><a href="#">Posters</a></li>
-						<li><a href="#">Web</a></li>
-					</ul>
+				<div class="project-menu-mob__col project-menu-mob__col_mid">
+					<h1>Curver</h1>
 				</div>
-
-				<div class="project-subheader__empty-col">
+				<div class="project-menu-mob__col">
+					<a 
+						href="#" 
+						class="project-menu-mob__btn project-menu-mob__btn_next"
+						title="Next category"
+					>Next</a>
 				</div>
 			</div>
-		</div><!-- /.project-subheader -->
+
+			<ul class="project-intro__tag-menu">
+				<li><a href="#">Curver</a></li>
+				<li><a href="#">Storage</a></li>
+				<li><a href="#">Tags</a></li>
+			</ul>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy dummy text evsince th1500s</p>
+		</div>
+
 		
 		<div class="project-page">
 			<span class="project-page__link project-page__link_prev">
@@ -83,29 +95,18 @@
 			
 			<div class="project-body">
 
-				<div class="project-intro">
-
-					<div class="project-intro__row">
-						<div class="project-intro__col-1">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore deleniti ducimus voluptatem modi accusantium repudiandae officiis id, quidem dolor qui?</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque culpa id harum rerum consectetur saepe sed, ipsam animi ipsa tempore qui quos dolorum dolor! Provident at libero deserunt corporis totam quidem, esse ex asperiores. Pariatur, nostrum voluptatum quam distinctio adipisci!</p>
-						</div>
-						<div class="project-intro__col-2">
-							
-						</div>
-					</div>
-				</div>
-
 				<div class="project-block">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-1.png" alt="picture">
-					</div>
+						<figcaption class="project-block__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatibus quo est ut maxime vero!</figcaption>
+					</figure>
 				</div>
 
 				<div class="project-block">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/project-pic.png" alt="">
-					</div>
+						<figcaption class="project-block__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatibus quo est ut maxime vero!</figcaption>
+					</figure>
 				</div>
 
 				<div class="project-block">
@@ -126,51 +127,51 @@
 				</div>
 
 				<div class="project-block" id="storage">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-5.png" alt="">
-					</div>
+					</figure>
 				</div>
 
 				<div class="project-block" id="waste">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-6.png" alt="">
-					</div>
+					</figure>
 				</div>
 
 				<div class="project-block" id="kitchen">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-7.png" alt="">
-					</div>
+					</figure>
 				</div>
 
 				<div class="project-block" id="laundry">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-8.png" alt="">
-					</div>
+					</figure>
 				</div>
 
 				<div class="project-block" id="kids">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-9.png" alt="">
-					</div>
+					</figure>
 				</div>
 
 				<div class="project-block" id="pets">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-10.png" alt="">
-					</div>
+					</figure>
 				</div>
 
 				<div class="project-block" id="cleaning">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-11.png" alt="">
-					</div>
+					</figure>
 				</div>
 
 				<div class="project-block" id="cross">
-					<div class="project-block__row">
+					<figure class="project-block__row">
 						<img src="images/content/project/pic-12.png" alt="">
-					</div>
+					</figure>
 				</div>
 			</div><!-- /.project body -->
 		</div><!-- /.project-page -->

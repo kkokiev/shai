@@ -5,7 +5,8 @@
 below(large)
 }
 .project-page__link {
-  position: absolute;
+  z-index: 100;
+  position: fixed;
   top: 50vh;
   display: inline-block;
   transform-origin: center;

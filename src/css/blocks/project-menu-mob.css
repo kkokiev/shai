@@ -1,0 +1,57 @@
+.project-menu-mob {
+  display: none;
+  width: 100%;
+  table-layout: fixed;
+below(tablet)
+}
+.project-menu-mob__col {
+  display: table-cell;
+  width: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+.project-menu-mob__col_mid {
+  width: auto;
+  padding: 0 10px;
+}
+.project-menu-mob span {
+  font-family: font-1;
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  letter-spacing: 0.06em;
+}
+.project-menu-mob__btn {
+  display: inline-block;
+  height: 25px;
+  width: 15px;
+  text-decoration: none;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.project-menu-mob__btn:hover,
+.project-menu-mob__btn:focus {
+  opacity: 0.6;
+}
+.project-menu-mob__btn_prev {
+  background: transparent url("images/icon-arrow-left.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.project-menu-mob__btn_next {
+  background: transparent url("images/icon-arrow-right.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.project-menu-mob_project-page .project-menu-mob__col:first-child {
+  text-align: left;
+}
+.project-menu-mob_project-page .project-menu-mob__col:last-child {
+  text-align: right;
+}
+.project-menu-mob_project-page h1 {
+  font-family: font-4;
+  font-size: 3rem;
+  line-height: 1.1em;
+  text-transform: uppercase;
+below(480px)
+}
+/*# sourceMappingURL=src/stylus/blocks/project-menu-mob.css.map */

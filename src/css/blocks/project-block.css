@@ -1,13 +1,26 @@
 .project-block {
   padding-bottom: 10px;
-below(tablet)
 }
 .project-block img {
   width: 100%;
 }
 .project-block__row {
+  position: relative;
+  width: 50%;
   max-width: 600px;
   margin: 0 auto;
+below(large)
+}
+.project-block__info {
+  position: absolute;
+  width: 250px;
+  top: 0;
+  left: 100%;
+  padding: 30px;
+  font-size: 1.4rem;
+  font-family: font-7;
+below(1300px)
+below(tablet)
 }
 .project-block__col {
   float: left;

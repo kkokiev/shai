@@ -8,7 +8,10 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
+	<!-- bxslider -->
+	<link href="lib/bxslider/jquery.bxslider.min.css" rel="stylesheet">
+	
 	<link href="style.css" rel="stylesheet">
 </head>
 
@@ -71,56 +74,55 @@
 		</div>
 
 		<!-- setup youtube video -->
-<script>
+		<script async defer>
 
-	// Load the IFrame Player API code asynchronously.
-	var tag = document.createElement('script');
-	tag.src = "https://www.youtube.com/player_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			// Load the IFrame Player API code asynchronously.
+			var tag = document.createElement('script');
+			tag.src = "https://www.youtube.com/player_api";
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-	// Replace the '#intro-video' element with an <iframe> and
-	// YouTube player after the API code downloads.
-	var player;
-	function onYouTubePlayerAPIReady() {
+			// Replace the '#intro-video' element with an <iframe> and
+			// YouTube player after the API code downloads.
+			var player;
+			function onYouTubePlayerAPIReady() {
 
-		setTimeout(function(){
-			player = new YT.Player('intro-video', {
-				playerVars: {
-					rel: 0,
-					autoplay: 1,
-					loop: 1,
-					controls: 0,
-					showinfo: 0,
-					autohide: 0,
-					modestbranding: 1,
-					vq: 'hd1080',
-					playlist: 'n6gFi0b1S24'
-				},
-				videoId: 'n6gFi0b1S24',
-				fitToBackground: true,
-				events: {
-					'onStateChange': showPlayer,
-					'onReady': onPlayerReady,
-				},
-			});
-		}, 1000);
-		
-	}
+				setTimeout(function(){
+					player = new YT.Player('intro-video', {
+						playerVars: {
+							rel: 0,
+							autoplay: 1,
+							loop: 1,
+							controls: 0,
+							showinfo: 0,
+							autohide: 0,
+							modestbranding: 1,
+							vq: 'hd1080',
+							playlist: 'n6gFi0b1S24'
+						},
+						videoId: 'n6gFi0b1S24',
+						fitToBackground: true,
+						events: {
+							'onStateChange': showPlayer,
+							'onReady': onPlayerReady,
+						},
+					});
+				}, 1000);
+				
+			}
 
-	function showPlayer(event){
-		if(player.getPlayerState() === 1) {
-			$('.intro__video').addClass('intro__video_show')
-		}
-	}
+			function showPlayer(event){
+				if(player.getPlayerState() === 1) {
+					$('.intro__video').addClass('intro__video_show')
+				}
+			}
 
-	function onPlayerReady(event){
-		player.mute();
-	}
+			function onPlayerReady(event){
+				player.mute();
+			}
 
-	/*resize video*/
-
-</script>
+			/*resize video*/
+		</script>
 
 		<div class="content__row" id="about">
 			
@@ -182,7 +184,6 @@
 			</div>
 		</div>
 
-
 		<div class="content__row" id="portfolio">
 			<div class="content-box">
 				<div class="content-box__container">
@@ -204,6 +205,26 @@
 					<li><a href="portfolio-typo.html">Typo infographics</a></li>
 					<li><a href="portfolio-web.html">Web</a></li>
 				</ul>
+
+				<div class="project-menu-mob">
+					<div class="project-menu-mob__col">
+						<a 
+							href="#" 
+							class="project-menu-mob__btn project-menu-mob__btn_prev"
+							title="Previous category"
+						>Prev</a>
+					</div>
+					<div class="project-menu-mob__col project-menu-mob__col_mid">
+						<span>Avant guarde</span>
+					</div>
+					<div class="project-menu-mob__col">
+						<a 
+							href="#" 
+							class="project-menu-mob__btn project-menu-mob__btn_next"
+							title="Next category"
+						>Next</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -534,23 +555,6 @@
 
 				</div>
 
-				<div class="portfolio__col">
-					
-					<div class="portfolio-item">
-						<a href="#" class="portfolio-item__link">
-							<span class="portfolio-item__overlay">
-								<span class="portfolio-item__text-wrap">
-									<span class="portfolio-item__text-wrap-inner">
-										<span class="portfolio-item__text">Lorem ipsum dolor</span>
-									</span>
-								</span>
-							</span>
-							<img src="images/content/avant/star480.gif" alt="" class="portfolio-item__img">
-						</a>
-					</div>
-
-				</div>
-
 			</div>
 		</div><!-- /.portfolio -->
 		
@@ -712,7 +716,6 @@
 				</div>
 			</div>
 		</div>
-
 	</footer>
 
 

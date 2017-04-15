@@ -1,16 +1,36 @@
 .project-block
 	padding-bottom 10px
 	
-	+below(tablet)
-		padding 0 15px 10px
-	
 	img 
 		width 100%
 		
 	&__row
+		position relative
+		width 50%
 		max-width 600px
 		margin 0 auto
 		clearfix()
+		
+		+below(large)
+			width 100%
+			max-width none
+			
+	&__info
+		position absolute
+		width 250px
+		top 0
+		left 100%
+		padding 30px
+		font-size 1.4rem
+		font-family font-7
+		
+		+below(1300px)
+			position static
+			width 100%
+			padding 5px
+			
+		+below(tablet)
+			display none
 			
 	&__col
 		float left

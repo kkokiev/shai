@@ -1,5 +1,6 @@
 .project-menu {
   display: inline-block;
+below(tablet)
 }
 .project-menu > li {
   float: left;
@@ -23,8 +24,5 @@
 .project-menu > li > a:hover,
 .project-menu > li > a:focus {
   border-bottom: 1px solid main;
-}
-.project-menu > li.active > a {
-  border-bottom: 2px solid main;
 }
 /*# sourceMappingURL=src/stylus/blocks/project-menu.css.map */

@@ -1,40 +1,64 @@
 .project-intro
+	position fixed
+	z-index 1000
+	top 56px
+	left 0
+	width 31%
+	padding-top 40px
+	padding-left 90px
+	padding-right 10px
+	padding-bottom 20px
+	font-size 1.4rem
 	
-	&__row
-		clearfix()
+	+below(1600px)
+		width 27%
+		
+	+below(1300px)
+		width 25%
+		padding-top 30px
+		padding-left 80px
+		
+	+below(large)
+		position static
+		width 100%
+		padding 76px 15px 20px
+	
+	&__title
+		margin-bottom 20px
+		font-family font-4
+		font-size 4rem
+		line-height 1.1em
+		text-transform uppercase
 		
 		+below(large)
-			max-width 600px
-			margin 0 auto
+			display none
 		
-	&__col-1
-		float left
-		width 23%
-		padding-right 20px
+	&__tag-menu
+		margin-bottom 30px
 		
-		+below(large)
-			width 100%
-			padding-right 0
-			padding-bottom 15px
-
-	&__col-2
-		float left
-		width 54%
+		+below(1300px)
+			margin-bottom 10px
 		
-		+below(large)
-			width 100%
-		
+		> li
+			display inline-block
+			margin-right 4px
+			
+			> a
+				color main
+				font-family font-7
+				font-style italic
+				text-decoration none
+				
+				&:hover,
+				&:focus
+					text-decoration underline
+					
 	p
-		margin-bottom 40px
+		margin-bottom 30px
 		font-family font-7
-		font-size 1.2rem
-		line-height 1.4em
 		
-		+below(large)
-			margin-bottom 15px
+		+below(1300px)
+			margin-bottom 10px
 		
 		&:last-child
-			margin-bottom 0
-		
-	img
-		width 100%
+			margin-bottom 0	
