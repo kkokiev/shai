@@ -2,37 +2,10 @@
   margin-left: -4px;
   margin-right: -4px;
 }
-.gallery__col-sizer {
-  width: 25%;
-below(tablet)
-}
 .gallery__col {
   float: left;
   width: 25%;
   padding: 4px;
 below(tablet)
-}
-.gallery__col_opened {
-  width: 50%;
-below(tablet)
-}
-.gallery__item {
-  position: relative;
-  overflow: hidden;
-}
-.gallery__overlay {
-  cursor: pointer;
-}
-.gallery img {
-  width: 100%;
-}
-.gallery__slide-wrap {
-  position: relative;
-  display: none;
-}
-.gallery__slide-wrap .bx-wrapper {
-  margin: 0;
-  border: 0;
-  box-shadow: 0;
 }
 /*# sourceMappingURL=src/stylus/blocks/gallery.css.map */

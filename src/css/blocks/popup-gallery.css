@@ -1,0 +1,11 @@
+.popup-gallery a {
+  display: none;
+  width: 100%;
+}
+.popup-gallery a:first-child {
+  display: block;
+}
+.popup-gallery a img {
+  width: 100%;
+}
+/*# sourceMappingURL=src/stylus/blocks/popup-gallery.css.map */

@@ -103,22 +103,6 @@ if(!(window.console && console.log)) {
 					scrollTop: target.offset().top - ($headerHeight)
 				}, 1000);
 				return false;
-
-				// if ($windowWidth > 1100){
-
-				// 	$('html,body').animate({
-				// 		scrollTop: target.offset().top - ($headerHeight / 2)
-				// 	}, 1000);
-				// 	return false;
-
-				// } else {
-
-				// 	$('html,body').animate({
-				// 		scrollTop: target.offset().top - ($headerHeight)
-				// 	}, 1000);
-				// 	return false;
-
-				// }
 			}
 		}
 	});
@@ -161,77 +145,36 @@ if(!(window.console && console.log)) {
 
 
 	/*
-		setup vibe page gallery and sliders
+		setup vibe page gallery 
 	*/
-	var $gallery = $('.gallery').masonry({
-		itemSelector: '.gallery__col',
-		columnWidth: '.gallery__col-sizer',
-		percentPosition: true
-	});
 
-	$gallery.imagesLoaded().progress( function() {
-		$gallery.masonry('layout');
-	});
-
-	var startSlider = function(slider) {
-		var $slider = $(slider);
-		$slider.find('.js-gallery-slider').bxSlider({
-			slideWidth: $slider.width(),
-			responsive: true,
-			pager: false,
-			nextSelector: slider + ' .slider-btn_next',
-			prevSelector: slider + ' .slider-btn_prev',
-			nextText: '',
-			prevText: '',
-			infiniteLoop: false,
-			onSliderLoad: function(currentIndex) {
-				//setup slider init counter
-				$slider.find('.js-slider-counter')
-					.html(currentIndex + 1);
-
-				//setup slider total count
-				$slider.find('.js-slider-total')
-					.html($slider.find('.js-gallery-slider li').length)
-
-				//setup slider init caption
-				$slider.find('.js-slider-caption')
-					.html($slider.find('.js-gallery-slider')
-						.eq(currentIndex)
-						.find('img')
-						.attr('title'));
+	//gallery
+	$('.js-popup-gallery').each(function() {
+		$(this).magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			mainClass: 'mfp-img-mobile',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1]
 			},
-			onSlideBefore: function($slideElement, oldIndex, newIndex) {
-				//setup slider caption on slide change
-				$slider.find('.js-slider-caption')
-					.html($slideElement.find('img').attr('title'));
-				//setup slider counter on slide change
-				$slider.find('.js-slider-counter')
-					.html(newIndex + 1);
-			}
 		});
-	};
-
-
-	$body.on('click', '.gallery__col', function(e){
-		if($(this).hasClass('gallery__col_opened')) {
-			//do nothing
-			return;
-		} else {
-			//enlarge current gallery item
-			$(this).addClass('gallery__col_opened');
-
-			//show and setup slider inside item
-			$(this).find('.gallery__slide-wrap').show();
-			var currentId = $(this).find('.gallery__slide-wrap').attr('id');
-			currentId = '#' + currentId;
-			startSlider(currentId);
-
-			//hide overlay picture
-			$(this).find('.gallery__overlay').hide();
-			//refresh layout
-			$gallery.masonry('layout');
-		}
 	});
+
+	//single image
+	$('.js-popup-image').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
+	});
+
 	/*
 		end setup vibe page gallery and sliders
 	*/
