@@ -8,8 +8,8 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Maginific popup -->
-	<link href="lib/magnificpopup/magnific-popup.css" rel="stylesheet">
+	<!-- bxslider -->
+	<link href="lib/bxslider/jquery.bxslider.min.css" rel="stylesheet">
 
 	<!-- main styles -->
 	<link href="style.css" rel="stylesheet">
@@ -63,50 +63,112 @@
 			<div class="vibe__body">
 				<div class="gallery">
 
+					<div class="gallery__col-sizer"></div>
+
 					<div class="gallery__col">
-						<div class="popup-gallery js-popup-gallery">
-							<a href="images/content/packaging/pics_1600_1540px_1024x1024.jpg" title="Title 1">
-								<img src="images/content/packaging/pics_1600_1540px_1024x1024.jpg">
-							</a>
-							<a href="images/content/packaging/pics_1600_1540px2_1024x1024.jpg" title="Title 2">
-								<img src="images/content/packaging/pics_1600_1540px2_1024x1024.jpg">
-							</a>
-							<a href="images/content/packaging/pics_1600_1540px3_1024x1024.jpg" title="Title 3">
-								<img src="images/content/packaging/pics_1600_1540px3_1024x1024.jpg">
-							</a>
-							<a href="images/content/packaging/pics_1600_1540px4_1024x1024.jpg" title="Title 4">
-								<img src="images/content/packaging/pics_1600_1540px4_1024x1024.jpg">
-							</a>
+						<div class="gallery__item">
+							<div class="gallery__slide-wrap" id="gallery-slider-1">
+								<ul class="gallery-slider js-gallery-slider">
+									<li>
+										<img src="images/content/packaging/pics_1600_1540px_1024x1024.jpg" alt="" title="Picture 1">
+									</li>
+									<li>
+										<img src="images/content/packaging/pics_1600_1540px2_1024x1024.jpg" alt="" title="Picture 2">
+									</li>
+									<li>
+										<img src="images/content/packaging/pics_1600_1540px3_1024x1024.jpg" alt="" title="Picture 3">
+									</li>
+									<li>
+										<img src="images/content/packaging/pics_1600_1540px4_1024x1024.jpg" alt="" title="Picture 4">
+									</li>
+								</ul>
+								<div class="gallery-slider-controls">
+									<div class="gallery-slider-controls__inner">
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_btn-wrap">
+											<span class="slider-btn slider-btn_prev"></span>
+											<span class="slider-btn slider-btn_next"></span>
+										</div>
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_count-wrap">
+											<span class="js-slider-counter"></span>
+											/
+											<span class="js-slider-total"></span>
+										</div>
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_caption-wrap">
+											<span class="js-slider-caption"></span>
+										</div>
+									</div>
+								</div><!-- /.gallery-slider-controls -->
+							</div>
+							<div class="gallery__overlay">
+								<img src="images/content/packaging/pics_1600_1540px_1024x1024.jpg" alt="">
+							</div>
 						</div>
-					</div>
-					
+					</div><!-- /.gallery__col -->
+
 					<div class="gallery__col">
-						<div class="popup-gallery js-popup-image">
-							<a href="images/content/packaging/pics_1600_1540px5_1024x1024.jpg" title="Title 1">
-								<img src="images/content/packaging/pics_1600_1540px5_1024x1024.jpg">
-							</a>
+						<div class="gallery__item">
+							<div class="gallery__slide-wrap" id="gallery-slider-2">
+								<ul class="gallery-slider js-gallery-slider">
+									<li>
+										<img src="images/content/packaging/pics_1600_1540px7_1024x1024.jpg" alt="" title="Text 1">
+									</li>
+									<li>
+										<img src="images/content/packaging/pics_1600_1540px8_1024x1024.jpg" alt="" title="Text 2">
+									</li>
+									<li>
+										<img src="images/content/packaging/pics_1600_1540px9_1024x1024.jpg" alt="" title="Text 3">
+									</li>
+								</ul>
+								<div class="gallery-slider-controls">
+									<div class="gallery-slider-controls__inner">
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_btn-wrap">
+											<span class="slider-btn slider-btn_prev"></span>
+											<span class="slider-btn slider-btn_next"></span>
+										</div>
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_count-wrap">
+											<span class="js-slider-counter"></span>
+											/
+											<span class="js-slider-total"></span>
+										</div>
+										<div class="gallery-slider-controls__col gallery-slider-controls__col_caption-wrap">
+											<span class="js-slider-caption"></span>
+										</div>
+									</div>
+								</div><!-- /.gallery-slider-controls -->
+							</div>
+							<div class="gallery__overlay">
+								<img src="images/content/packaging/pics_1600_1540px7_1024x1024.jpg" alt="">
+							</div>
 						</div>
 					</div>
 
 					<div class="gallery__col">
-						<div class="popup-gallery js-popup-image">
-							<a href="images/content/packaging/pics_1600_1540px6_1024x1024.jpg" title="Title 1">
-								<img src="images/content/packaging/pics_1600_1540px6_1024x1024.jpg">
-							</a>
+						<div class="gallery__item">
+							<img src="images/content/packaging/pics_1600_1540px5_1024x1024.jpg" alt="">
 						</div>
 					</div>
 
 					<div class="gallery__col">
-						<div class="popup-gallery js-popup-gallery">
-							<a href="images/content/packaging/pics_1600_1540px7_1024x1024.jpg" title="Title 1">
-								<img src="images/content/packaging/pics_1600_1540px7_1024x1024.jpg">
-							</a>
-							<a href="images/content/packaging/pics_1600_1540px8_1024x1024.jpg" title="Title 2">
-								<img src="images/content/packaging/pics_1600_1540px8_1024x1024.jpg">
-							</a>
-							<a href="images/content/packaging/pics_1600_1540px9_1024x1024.jpg" title="Title 3">
-								<img src="images/content/packaging/pics_1600_1540px9_1024x1024.jpg">
-							</a>
+						<div class="gallery__item">
+							<img src="images/content/packaging/pics_1600_1540px6_1024x1024.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/packaging/pics_1600_1540px7_1024x1024.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/packaging/pics_1600_1540px5_1024x1024.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="gallery__col">
+						<div class="gallery__item">
+							<img src="images/content/packaging/pics_1600_1540px6_1024x1024.jpg" alt="">
 						</div>
 					</div>
 
@@ -212,8 +274,14 @@
 <!-- Parallax -->
 <script src="lib/parallax/parallax.min.js"></script>
 
-<!-- Maginific popup -->
-<script src="lib/magnificpopup/jquery.magnific-popup.min.js"></script>
+<!-- Masonry -->
+<script src="lib/masonry/masonry.pkgd.min.js"></script>
+
+<!-- Imagesloaded -->
+<script src="lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+
+<!-- Bxslider -->
+<script src="lib/bxslider/jquery.bxslider.min.js"></script>
 
 <!-- sticky -->
 <script src="lib/sticky/jquery.sticky.js"></script>

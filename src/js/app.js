@@ -148,31 +148,73 @@ if(!(window.console && console.log)) {
 		setup vibe page gallery 
 	*/
 
-	//gallery
-	$('.js-popup-gallery').each(function() {
-		$(this).magnificPopup({
-			delegate: 'a',
-			type: 'image',
-			tLoading: 'Loading image #%curr%...',
-			mainClass: 'mfp-img-mobile',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,1]
-			},
-		});
+	var $gallery = $('.gallery').masonry({
+		itemSelector: '.gallery__col',
+		columnWidth: '.gallery__col-sizer',
+		percentPosition: true
 	});
 
-	//single image
-	$('.js-popup-image').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: true,
-		mainClass: 'mfp-img-mobile',
-		image: {
-			verticalFit: true
+	$gallery.imagesLoaded().progress( function() {
+		$gallery.masonry('layout');
+	});
+
+	var startSlider = function(slider) {
+		var $slider = $(slider);
+		$slider.find('.js-gallery-slider').bxSlider({
+			slideWidth: $slider.width(),
+			responsive: true,
+			pager: false,
+			nextSelector: slider + ' .slider-btn_next',
+			prevSelector: slider + ' .slider-btn_prev',
+			nextText: '',
+			prevText: '',
+			infiniteLoop: false,
+			onSliderLoad: function(currentIndex) {
+				//setup slider init counter
+				$slider.find('.js-slider-counter')
+					.html(currentIndex + 1);
+
+				//setup slider total count
+				$slider.find('.js-slider-total')
+					.html($slider.find('.js-gallery-slider li').length)
+
+				//setup slider init caption
+				$slider.find('.js-slider-caption')
+					.html($slider.find('.js-gallery-slider')
+						.eq(currentIndex)
+						.find('img')
+						.attr('title'));
+			},
+			onSlideBefore: function($slideElement, oldIndex, newIndex) {
+				//setup slider caption on slide change
+				$slider.find('.js-slider-caption')
+					.html($slideElement.find('img').attr('title'));
+				//setup slider counter on slide change
+				$slider.find('.js-slider-counter')
+					.html(newIndex + 1);
+			}
+		});
+	};
+
+	$body.on('click', '.gallery__col', function(e){
+		if($(this).hasClass('gallery__col_opened')) {
+			//do nothing
+			return;
+		} else {
+			//enlarge current gallery item
+			$(this).addClass('gallery__col_opened');
+
+			//show and setup slider inside item
+			$(this).find('.gallery__slide-wrap').show();
+			var currentId = $(this).find('.gallery__slide-wrap').attr('id');
+			currentId = '#' + currentId;
+			startSlider(currentId);
+
+			//hide overlay picture
+			$(this).find('.gallery__overlay').hide();
+			//refresh layout
+			$gallery.masonry('layout');
 		}
-		
 	});
 
 	/*
@@ -339,5 +381,7 @@ if(!(window.console && console.log)) {
 	}
 
 	setupPortfolioAnimation();
+	
 
 })(jQuery);
+
